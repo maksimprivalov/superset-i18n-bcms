@@ -1,0 +1,3 @@
+# Versions match what Superset 6.1.0 pins in requirements/base.txt
+babel==2.17.0
+polib==1.2.0
