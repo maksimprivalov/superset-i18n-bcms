@@ -24,3 +24,7 @@ node_modules/
 *.swp
 .DS_Store
 Thumbs.db
+
+# Docker example: local test secrets and unpacked release zips
+docker/test.env
+build-context/

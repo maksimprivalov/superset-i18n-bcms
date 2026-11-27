@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- LOCAL TEST ONLY: embeds a dashboard with a guest token, like a host application.
+     Open as http://localhost:8000/host.html#<dashboard-embed-uuid>,<guest-token>[,<lang>] -->
+<html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Embedded dashboard test</title>
+    <style>
+      body { margin: 0; font-family: sans-serif; }
+      #dashboard, #dashboard iframe { width: 100vw; height: 100vh; border: 0; }
+    </style>
+    <script src="./embedded-sdk/index.js"></script>
+  </head>
+  <body>
+    <div id="dashboard"></div>
+    <script>
+      const [id, token, lang] = location.hash.slice(1).split(",");
+      supersetEmbeddedSdk.embedDashboard({
+        id,
+        supersetDomain: "http://localhost:8088",
+        mountPoint: document.getElementById("dashboard"),
+        fetchGuestToken: async () => token,
+        dashboardUiConfig: lang ? { urlParams: { _l_: lang } } : {},
+      });
+    </script>
+  </body>
+</html>
