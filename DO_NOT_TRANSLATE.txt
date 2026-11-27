@@ -59,7 +59,6 @@ Google
 Google Sheets
 Slack
 Chrome
-Edge
 Pandas
 pandas
 Celery
@@ -86,7 +85,6 @@ jpeg
 css
 ssh
 url
-public
 bfill
 ffill
 std
@@ -94,9 +92,6 @@ cioc
 alpha-2
 alpha-3
 Data URI
-dataframe
-backend
-ad-hoc
 create table as select
 create view as select
 
@@ -109,9 +104,6 @@ GROUP BY
 ORDER BY
 LIMIT
 AS
-AND
-OR
-NOT
 IN
 LIKE
 CREATE
