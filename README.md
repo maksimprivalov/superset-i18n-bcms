@@ -28,8 +28,11 @@ Superset image and later submitted upstream unchanged.
 
 ## Install
 
-_To be written._ CI will build `.mo` and `messages.json` files and attach them to
-GitHub Releases; `docker/` will contain an example derived image.
+_To be written._ Releases will attach a zip with the
+`superset/translations/<lang>/LC_MESSAGES/` tree (`messages.po`, `messages.mo` and
+the frontend `messages.json`, built with Superset's own `po2json`). Release tags
+look like `6.1.0-sr_Latn.1` (one language) or `6.1.0-all.2` (all languages).
+`docker/` will contain an example derived image.
 
 ## Review status
 

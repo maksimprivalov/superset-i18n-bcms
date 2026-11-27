@@ -1,0 +1,80 @@
+name: Release
+
+# Tags: <superset version>-<lang|all>.<n>, e.g. 6.1.0-sr_Latn.1 or 6.1.0-all.2.
+# tools/build.py validates the format strictly and fails on anything else.
+on:
+  push:
+    tags: ["[0-9]+.[0-9]+.[0-9]+-*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    env:
+      TAG: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: tools/requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q --no-install-recommends gettext
+          pip install -r tools/requirements.txt
+          npm install --prefix build/node-tools --ignore-scripts --no-audit --no-fund --no-save po2json@0.4.5 jed@1.1.1
+
+      - name: Read the Superset version from the tag
+        run: echo "VERSION=${TAG%%-*}" >> "$GITHUB_ENV"
+
+      - name: Fetch the upstream template
+        run: |
+          git clone --quiet --depth 1 --branch "$VERSION" --filter=blob:none --sparse \
+            https://github.com/apache/superset.git .upstream
+          git -C .upstream sparse-checkout set --no-cone /superset/translations/messages.pot
+
+      - name: Validate
+        run: |
+          python tools/check.py --require-msgfmt --template "$VERSION=.upstream/superset/translations/messages.pot"
+          python tools/transliterate_sr.py --check
+          python tools/status.py --check
+
+      - name: Build
+        run: python tools/build.py --tag "$TAG" --po2json build/node-tools/node_modules/.bin/po2json --zip
+
+      - name: Smoke test
+        run: |
+          python tools/smoke_test.py --version "$VERSION" --require-json
+          node tools/smoke_jed.cjs build/node-tools/node_modules/jed \
+            dist/$VERSION/superset/translations/*/LC_MESSAGES/messages.json
+
+      - name: Write release notes
+        run: |
+          {
+            echo "Unofficial UI translations for Apache Superset $VERSION. Not affiliated with or endorsed by the Apache Software Foundation."
+            echo
+            echo "The zip contains the \`superset/translations/<lang>/LC_MESSAGES/\` tree (messages.po, messages.mo, messages.json)."
+            echo "Entries marked fuzzy are machine drafts awaiting native review; Superset shows them in the UI."
+            echo
+            echo "| Version | Language | Total | Reviewed (here) | Reviewed (upstream) | Fuzzy (AI draft) | Untranslated | Reviewed % |"
+            echo "|---------|----------|------:|----------------:|--------------------:|-----------------:|-------------:|-----------:|"
+            grep "^| $VERSION |" REVIEW_STATUS.md
+            echo
+            echo "Known limitation on 6.1.0: embedded dashboards stay in English (apache/superset#42433)."
+          } > dist/release-notes.md
+
+      - name: Create the GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          gh release create "$TAG" "dist/superset-translations-$TAG.zip"
+          --verify-tag --title "$TAG" --notes-file dist/release-notes.md

@@ -1,0 +1,75 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate ${{ matrix.superset }}
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        superset: ["6.1.0"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: tools/requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install gettext (msgfmt)
+        run: sudo apt-get update -q && sudo apt-get install -y -q --no-install-recommends gettext
+
+      - name: Install Python tools
+        run: pip install -r tools/requirements.txt
+
+      - name: Install upstream frontend tools (versions pinned in Superset 6.1.0's lockfile)
+        run: npm install --prefix build/node-tools --ignore-scripts --no-audit --no-fund --no-save po2json@0.4.5 jed@1.1.1
+
+      - name: Fetch the upstream template for ${{ matrix.superset }}
+        run: |
+          git clone --quiet --depth 1 --branch "${{ matrix.superset }}" --filter=blob:none --sparse \
+            https://github.com/apache/superset.git .upstream
+          git -C .upstream sparse-checkout set --no-cone /superset/translations/messages.pot
+
+      - name: Check catalogs
+        run: >
+          python tools/check.py --require-msgfmt
+          --template "${{ matrix.superset }}=.upstream/superset/translations/messages.pot"
+
+      - name: Check that sr is generated from sr_Latn
+        run: python tools/transliterate_sr.py --check
+
+      - name: Check that REVIEW_STATUS.md is up to date
+        run: python tools/status.py --check
+
+      - name: Build .mo and messages.json
+        run: python tools/build.py --version "${{ matrix.superset }}" --po2json build/node-tools/node_modules/.bin/po2json
+
+      - name: Smoke test (gettext and Jed)
+        run: |
+          python tools/smoke_test.py --version "${{ matrix.superset }}" --require-json
+          node tools/smoke_jed.cjs build/node-tools/node_modules/jed \
+            dist/${{ matrix.superset }}/superset/translations/*/LC_MESSAGES/messages.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: translations-${{ matrix.superset }}
+          path: dist/${{ matrix.superset }}/
+          retention-days: 7
