@@ -6,7 +6,8 @@ minimal file of the same shape):
   {"version": "6.1.0", "lang": "sr_Latn", "reviewed": false,
    "entries": [{"msgid": "...", "msgid_plural": null, "msgstr": "...",
                 "note": "optional reason, kept as a comment"},
-               {"msgid": "...", "msgid_plural": "...", "msgstr": ["form0", "form1", "form2"]}]}
+               {"msgid": "...", "msgid_plural": "...", "msgstr": ["form0", "form1", "form2"]},
+               {"msgid": "...", "clear": true, "note": "why it stays untranslated"}]}
 
 Imported entries are marked fuzzy with the translator comment
 "Machine-translated (Claude), needs native review", unless the batch sets
@@ -47,15 +48,26 @@ def main() -> int:
     index = {(m.id if isinstance(m.id, str) else m.id[0]): m for m in catalog if m.id}
 
     imported = skipped = failed = 0
+    cleared = 0
     for entry in batch["entries"]:
         key = entry["msgid"]
         value = entry.get("msgstr")
-        if value in (None, "", []):
-            continue
         msg = index.get(key)
         if msg is None:
             print(f"  ! not in catalog: {key[:70]!r}")
             failed += 1
+            continue
+        if entry.get("clear"):
+            # Deliberately leave untranslated (falls back to English); the note says why.
+            if not msg.fuzzy and not args.overwrite and any(msg.string if isinstance(msg.string, tuple) else [msg.string]):
+                skipped += 1
+                continue
+            msg.string = ("",) * catalog.num_plurals if isinstance(msg.id, (tuple, list)) else ""
+            msg.flags.discard("fuzzy")
+            msg.user_comments = [entry["note"]] if entry.get("note") else []
+            cleared += 1
+            continue
+        if value in (None, "", []):
             continue
         is_plural = isinstance(msg.id, (tuple, list))
         if is_plural != isinstance(value, list) or (is_plural and entry.get("msgid_plural") not in (None, msg.id[1])):
@@ -87,8 +99,8 @@ def main() -> int:
         imported += 1
 
     dump(catalog, po)
-    print(f"{po.relative_to(ROOT).as_posix()}: imported {imported}, skipped {skipped} (already reviewed), "
-          f"rejected {failed}")
+    print(f"{po.relative_to(ROOT).as_posix()}: imported {imported}, cleared {cleared}, "
+          f"skipped {skipped} (already reviewed), rejected {failed}")
     if lang == "sr_Latn" and not args.no_sr:
         import transliterate_sr
         transliterate_sr.main_regenerate()

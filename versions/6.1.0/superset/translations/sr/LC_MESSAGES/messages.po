@@ -300,19 +300,18 @@ msgstr ""
 msgid "%(rows)d rows returned"
 msgstr "Враћено %(rows)d редова"
 
-# Machine-translated (Claude), needs native review
-#, fuzzy, python-format
+# Left untranslated on purpose: msgfmt checks every plural form against
+# msgid_plural, so no Serbian form 0 can use %(suggestion)s, and
+# %(firstSuggestions)s is empty for n=1. Upstream split this message in
+# apache/superset#46049; falls back to English on 6.1.0.
+#, python-format
 msgid "%(suggestion)s instead of \"%(undefinedParameter)s?\""
 msgid_plural ""
 "%(firstSuggestions)s or %(lastSuggestion)s instead of "
 "\"%(undefinedParameter)s\"?"
-msgstr[0] "%(suggestion)s уместо „%(undefinedParameter)s“?"
+msgstr[0] ""
 msgstr[1] ""
-"%(firstSuggestions)s или %(lastSuggestion)s уместо "
-"„%(undefinedParameter)s“?"
 msgstr[2] ""
-"%(firstSuggestions)s или %(lastSuggestion)s уместо "
-"„%(undefinedParameter)s“?"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
