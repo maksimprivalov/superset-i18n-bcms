@@ -1,0 +1,10 @@
+# Words that stay in Latin script in the generated Cyrillic catalog (sr) when
+# sr_Latn uses them, but that are ordinary, translatable words elsewhere, so
+# they are NOT in DO_NOT_TRANSLATE.txt (tools/check.py would require them in
+# every translation). Used only by tools/transliterate_sr.py. One term per
+# line, case-sensitive, whole word; '#' lines and blanks ignored.
+backend
+dataframe
+ad-hoc
+Edge
+public

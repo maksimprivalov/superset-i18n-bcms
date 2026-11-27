@@ -11,7 +11,7 @@ Text that stays in Latin script:
      keyboard shortcuts (Ctrl + Enter, Cmd / Ctrl + C, ...);
   2. quoted or bracketed ASCII text copied verbatim from the msgid
      ('value', "value", „value“, [column]);
-  3. terms listed in DO_NOT_TRANSLATE.txt (case-sensitive, whole words; a
+  3. terms listed in DO_NOT_TRANSLATE.txt or tools/sr_keep_latin.txt (case-sensitive, whole words; a
      Serbian case ending after a hyphen is still transliterated: SQL-u -> SQL-у);
   4. dotted names and paths (deck.gl, d3.js, sqlalchemy.create_engine,
      superset.example.com, sql/protocolv1/o/12345), file extensions (.pdf),
@@ -46,6 +46,7 @@ from common import _BRACE_RE, _PRINTF_RE, _TAG_RE, load, read_terms, to_bytes  #
 
 ROOT = Path(__file__).resolve().parent.parent
 DNT_FILE = ROOT / "DO_NOT_TRANSLATE.txt"
+KEEP_LATIN_FILE = ROOT / "tools" / "sr_keep_latin.txt"  # Latin in sr, but translatable elsewhere
 
 _SINGLE = dict(zip("abcčćdđefghijklmnoprsštuvzž", "абцчћдђефгхијклмнопрсштувзж"))
 _SINGLE.update({k.upper(): v.upper() for k, v in list(_SINGLE.items())})
@@ -177,18 +178,25 @@ def main() -> int:
     ap.add_argument("--text", help="transliterate one string and print it")
     ap.add_argument("--msgid", default="", help="source text for --text (enables rule 2)")
     args = ap.parse_args()
-    dnt = _dnt_regex(read_terms(DNT_FILE))
-
     if args.text is not None:
-        print(latin_to_cyrillic(args.text, args.msgid, dnt))
+        print(latin_to_cyrillic(args.text, args.msgid, _load_terms()))
         return 0
+    return main_regenerate(check=args.check)
 
+
+def _load_terms() -> re.Pattern | None:
+    return _dnt_regex(read_terms(DNT_FILE) + read_terms(KEEP_LATIN_FILE))
+
+
+def main_regenerate(check: bool = False) -> int:
+    """Regenerate (or with check=True, verify) sr for every version."""
+    dnt = _load_terms()
     stale = 0
     for src in sorted(ROOT.glob("versions/*/superset/translations/sr_Latn/LC_MESSAGES/messages.po")):
         dst = src.parent.parent.parent / "sr" / "LC_MESSAGES" / "messages.po"
         data = transliterate_catalog(src, dnt)
         rel = dst.relative_to(ROOT).as_posix()
-        if args.check:
+        if check:
             if not dst.exists() or dst.read_bytes() != data:
                 print(f"stale: {rel} (run tools/transliterate_sr.py)", file=sys.stderr)
                 stale += 1

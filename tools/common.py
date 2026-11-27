@@ -48,6 +48,19 @@ _HTML_TAGS = (
 )
 _TAG_RE = re.compile(rf"</?({_HTML_TAGS})\b[^<>]*?/?>", re.I)
 _WS_EDGE_RE = re.compile(r"^(\s*).*?(\s*)$", re.S)
+# Markdown: link/image targets and bold markers must match (errors). The number of
+# `code` spans may legitimately differ (a backticked UI label gets translated as a
+# quoted label), so tools/check.py only warns about it.
+_MD_TARGET_RE = re.compile(r"\]\(([^)\s]+)\)")
+_MD_CODE_RE = re.compile(r"`[^`\n]+`")
+
+
+def markdown(text: str) -> tuple[Counter, int]:
+    return Counter(_MD_TARGET_RE.findall(text)), text.count("**")
+
+
+def code_spans(text: str) -> int:
+    return len(_MD_CODE_RE.findall(text))
 
 
 def placeholders(text: str) -> Counter:
@@ -107,6 +120,8 @@ def structural_problems(msg: Message, nplurals: int) -> list[str]:
             problems.append(f"{where}placeholders {sorted(sp.elements())} != {sorted(dp.elements())}")
         if tags(src) != tags(dst):
             problems.append(f"{where}markup {sorted(tags(src).elements())} != {sorted(tags(dst).elements())}")
+        if markdown(src) != markdown(dst):
+            problems.append(f"{where}markdown (link targets or ** markers) differs")
         if edge_whitespace(src) != edge_whitespace(dst):
             problems.append(f"{where}leading/trailing whitespace differs")
         if src.count("\n") != dst.count("\n"):
