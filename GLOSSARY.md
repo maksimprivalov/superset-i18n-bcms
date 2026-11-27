@@ -1,8 +1,8 @@
 # Glossary
 
-> **DRAFT, not approved.** Proposed in Phase 0 (2026-11-27). Nothing will be
-> translated against it until the maintainer approves it. "Native check" marks
-> entries where a native speaker should decide.
+> **Approved by the maintainer on 2026-11-27.** Entries marked "native check"
+> are approved as working terms; a native speaker may still revise them, and
+> any change here must be applied to the catalogs as well.
 
 Approved UI terminology for all target languages. `tools/check.py` warns when a
 translation uses a term that conflicts with this table.

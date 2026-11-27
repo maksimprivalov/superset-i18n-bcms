@@ -3,9 +3,8 @@
 Unofficial Serbian, Croatian and Bosnian UI translations for
 [Apache Superset](https://github.com/apache/superset).
 
-> **Status: setup.** No catalogs have been published yet. Locale codes and the
-> glossary are still awaiting approval. Nothing in this repository is ready to
-> install.
+> **Status: in progress.** Serbian catalogs for 6.1.0 exist, but nothing has
+> been released yet and nothing in this repository is ready to install.
 
 ## What this is
 
@@ -13,13 +12,13 @@ Drop-in `.po` catalogs, laid out exactly like upstream
 `superset/translations/<lang>/LC_MESSAGES/`, so they can be installed into a
 Superset image and later submitted upstream unchanged.
 
-| Language              | Locale code (proposed) | Script   | Variant    |
-|-----------------------|------------------------|----------|------------|
-| Serbian (Latin)       | `sr_Latn`              | Latin    | ekavian    |
-| Serbian (Cyrillic)    | `sr`                   | Cyrillic | ekavian    |
-| Croatian              | `hr`                   | Latin    | ijekavian  |
-| Bosnian               | `bs`                   | Latin    | ijekavian  |
-| Montenegrin           | to be decided          | Latin    | ijekavian  |
+| Language              | Locale code     | Script   | Variant    | Notes |
+|-----------------------|-----------------|----------|------------|-------|
+| Serbian (Latin)       | `sr_Latn`       | Latin    | ekavian    | Source catalog for Serbian; same code as upstream |
+| Serbian (Cyrillic)    | `sr`            | Cyrillic | ekavian    | Generated from `sr_Latn`, never edited by hand |
+| Croatian              | `hr`            | Latin    | ijekavian  | |
+| Bosnian               | `bs`            | Latin    | ijekavian  | |
+| Montenegrin           | deferred        | Latin    | ijekavian  | `cnr` does not work with Babel (it maps to `sr_Latn_ME`) |
 
 ## Supported Superset versions
 
