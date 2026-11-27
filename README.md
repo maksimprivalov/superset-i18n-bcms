@@ -42,11 +42,18 @@ so drafts are visible in the UI.
 
 ## Known limitations
 
-- **Embedded dashboards stay in English on Superset 6.1.0**, whatever locale is
-  set ([apache/superset#42433](https://github.com/apache/superset/issues/42433)).
-  The fix ([apache/superset#42438](https://github.com/apache/superset/pull/42438),
-  merged to `master` on 2026-08-29) is not in 6.1.0. It is included in the
-  7.0.0 release candidates.
+- **Embedded dashboards on Superset 6.1.0 need a config hook.** Out of the box they
+  stay in English whatever locale is set
+  ([apache/superset#42433](https://github.com/apache/superset/issues/42433)): the
+  embedded page fetches the language pack without the guest token, and 6.1.0 requires
+  login for it. The fix ([apache/superset#42438](https://github.com/apache/superset/pull/42438))
+  is in the 7.0.0 release candidates. On 6.1.0, the `FLASK_APP_MUTATOR` in
+  [docker/superset_config_i18n.py](docker/superset_config_i18n.py) does the same from
+  `superset_config.py`; tested with a guest-token embedded dashboard, see
+  [docker/README.md](docker/README.md).
+- **Serbian Latin (`sr_Latn`) cannot be its own language on 6.1.0**: the frontend
+  always asks for the base language (`sr`). Serve the Latin files under `sr` instead
+  (see docker/README.md); 7.0 supports `sr_Latn` directly.
 
 ## License
 
@@ -61,4 +68,5 @@ Nezvanični prevodi korisničkog interfejsa Apache Superseta na srpski (latinica
 ćirilica), hrvatski i bosanski. Projekat je u pripremi i još nema prevoda
 spremnih za instalaciju. Mašinski prevedeni nizovi su označeni kao `fuzzy` dok ih
 ne pregleda izvorni govornik. Ugrađene (embedded) kontrolne table u verziji
-6.1.0 ostaju na engleskom (apache/superset#42433).
+6.1.0 su na engleskom (apache/superset#42433) dok se u `superset_config.py` ne doda
+`FLASK_APP_MUTATOR` iz `docker/superset_config_i18n.py` (videti docker/README.md).
