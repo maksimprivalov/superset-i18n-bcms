@@ -8,3 +8,17 @@ dataframe
 ad-hoc
 Edge
 public
+# deck.gl layer names that some reviewed sr_Latn strings keep in English
+deck.gl Arc
+Isoband
+# role, product, attribute and icon names
+Admin
+Drill
+href
+bolt
+# d3 line interpolation names shown as options
+basis
+cardinal
+monotone
+step-after
+step-before

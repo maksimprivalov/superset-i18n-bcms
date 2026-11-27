@@ -26,8 +26,8 @@ deck.gl
 Deck.gl
 Deckgl
 deckGL
-deck.gl Arc
 deck.gl Geojson
+JavaScript
 Handlebars
 Mapbox
 mapbox
@@ -37,7 +37,6 @@ Box Plot
 Nightingale
 Nightingale Rose
 Sunburst
-Isoband
 Geohash
 geohash
 Geojson
