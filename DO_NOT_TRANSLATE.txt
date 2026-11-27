@@ -1,0 +1,153 @@
+# Terms kept in English (and in Latin script) in every target language:
+# product names, SQL keywords, technical tokens. One term per line, matched
+# case-sensitively as a whole word; lines starting with '#' and blank lines are
+# ignored. A Serbian case ending after a hyphen is still inflected and
+# transliterated (Superset-u -> Superset-у).
+#
+# PROPOSAL (2026-11-27), awaiting maintainer review. Built from the Latin tokens
+# that the human-reviewed upstream Serbian Cyrillic catalog keeps. Ordinary words
+# (filter, table, data...) must never be listed here: tools/check.py will treat
+# a translated DNT term as an error.
+#
+# Words the transliterator already keeps without being listed: code-like tokens
+# copied from the msgid (ALL-CAPS, digits, underscores, camelCase), dotted names,
+# paths, file extensions, and words with q/w/x/y.
+
+# --- Superset and its parts
+Apache Superset
+Superset
+Superset Embedded SDK
+SQL Lab
+Embedded SDK
+
+# --- Charting and front-end libraries, chart type names
+ECharts
+deck.gl
+Deck.gl
+Deckgl
+deckGL
+deck.gl Arc
+deck.gl Geojson
+Handlebars
+Mapbox
+mapbox
+Ant Design
+AntD
+Box Plot
+Nightingale
+Nightingale Rose
+Sunburst
+Isoband
+Geohash
+geohash
+Geojson
+geojson
+Captcha
+
+# --- Databases, engines and external services
+Postgres
+PostgreSQL
+postgresql
+Presto
+Trino
+Hive
+Oracle
+Doris
+Dremio
+Bigquery
+Google
+Google Sheets
+Slack
+Chrome
+Edge
+Pandas
+pandas
+Celery
+
+# --- Templating, formats, literal values
+Jinja
+jinja
+mathjs
+NaN
+Markdown
+markdown
+null
+Null
+NULL
+cron
+crontab
+dttm
+Dttm
+iframe
+json
+csv
+pdf
+jpeg
+css
+ssh
+url
+public
+bfill
+ffill
+std
+cioc
+alpha-2
+alpha-3
+Data URI
+dataframe
+backend
+ad-hoc
+create table as select
+create view as select
+
+# --- SQL keywords
+SELECT
+FROM
+WHERE
+HAVING
+GROUP BY
+ORDER BY
+LIMIT
+AS
+AND
+OR
+NOT
+IN
+LIKE
+CREATE
+CREATE TABLE AS
+CREATE VIEW AS
+DROP
+TRUNCATE
+INSERT
+UPDATE
+DELETE
+COUNT
+SUM
+
+# --- Acronyms
+SQL
+CSV
+JSON
+URL
+URI
+HTML
+CSS
+PDF
+PNG
+SSH
+SSL
+HTTP
+HTTPS
+API
+UTC
+ISO
+ID
+CTAS
+CVAS
+DDL
+DML
+RLS
+YAML
+ZIP
+XML
