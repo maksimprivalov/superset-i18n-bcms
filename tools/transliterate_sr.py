@@ -68,7 +68,8 @@ _EXACT_RES = [
     _BRACE_RE,
     _TAG_RE,
     re.compile(r"&(?:[A-Za-z]+|#\d+|#x[0-9A-Fa-f]+);"),
-    re.compile(r"\b[A-Za-z][A-Za-z0-9+.\-]*://[^\s\"'<>„“”»]*[^\s\"'<>„“”».,;:!?)]"),
+    re.compile(r"\b[A-Za-z][A-Za-z0-9+.\-]*://(?:[^\s\"'<>„“”»]*[^\s\"'<>„“”».,;:!?)])?"),
+    re.compile(r"%\{\w+\}\w"),                                      # odd "%{key}s" tokens in msgids
     re.compile(r"\b[\w.+\-]+@[\w\-]+(?:\.[\w\-]+)+\b"),
     re.compile(r"`[^`\n]*`"),
     re.compile(rf"\b{_KEYS}\b(?:\s*[+/]\s*(?:{_KEYS}\b|[A-Za-z0-9]\b))*"),

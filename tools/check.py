@@ -59,7 +59,7 @@ def _stem_regex(term: str) -> re.Pattern:
     for w in term.lower().split():
         if len(w) > 5:
             stem = w[: max(4, len(w) - 2)]
-        elif len(w) > 3 or (len(w) == 3 and w[-1] in "aeiou"):
+        elif len(w) > 3 or (len(w) == 3 and w[-1] in "aeiouаеиоу"):
             stem = w[:-1]  # osa -> os (ose, osi), uredi -> ured
         else:
             stem = w
