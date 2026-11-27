@@ -96,7 +96,8 @@ msgstr ""
 "                Неће бити сачуван приликом чувања графика.\n"
 "              "
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid ""
 "\n"
 "            <p>Your report/alert was unable to be generated because of "
@@ -105,6 +106,13 @@ msgid ""
 "            <p><b><a href=\"%(url)s\">%(call_to_action)s</a></b></p>\n"
 "            "
 msgstr ""
+"\n"
+"            <p>Ваш извештај/упозорење није могуће генерисати због следеће"
+" грешке: %(text)s</p>\n"
+"            <p>Проверите да ли ваша контролна табла/графикон садржи "
+"грешке.</p>\n"
+"            <p><b><a href=\"%(url)s\">%(call_to_action)s</a></b></p>\n"
+"            "
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid " (excluded)"
@@ -131,8 +139,10 @@ msgstr " нову"
 msgid " at line %(line)d"
 msgstr " у линији %(line)d"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid " expression which needs to adhere to the "
-msgstr ""
+msgstr " – израз који мора да поштује "
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid " for details."
@@ -143,9 +153,13 @@ msgstr " за детаље."
 msgid " near '%(highlight)s'"
 msgstr " близу '%(highlight)s'"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid " source code of Superset's sandboxed parser"
-msgstr ""
+msgstr " изворни код изолованог (sandbox) парсера Superset-а"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 " standard to ensure that the lexicographical ordering\n"
 "                      coincides with the chronological ordering. If the\n"
@@ -162,6 +176,19 @@ msgid ""
 "defaults on a per\n"
 "                      database/column name level via the extra parameter."
 msgstr ""
+" стандард како би се лексикографски редослед\n"
+"                      поклапао са хронолошким редоследом. Ако формат\n"
+"                      временске ознаке не поштује ISO 8601 стандард,\n"
+"                      мораћете да дефинишете израз и тип за\n"
+"                      претварање стринга у датум или временску ознаку. "
+"Напомена:\n"
+"                      временске зоне тренутно нису подржане. Ако је време"
+" сачувано\n"
+"                      у формату епохе, унесите `epoch_s` или `epoch_ms`. "
+"Ако образац\n"
+"                      није наведен, користе се опционе подразумеване "
+"вредности на нивоу\n"
+"                      базе података/назива колоне путем параметра extra."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid " to add calculated columns"
@@ -191,8 +218,10 @@ msgstr " да отворите SQL Lab. Одатле можете сачуват
 msgid " to see details."
 msgstr " за приказ детаља."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid " to visualize your data."
-msgstr ""
+msgstr " да бисте визуализовали своје податке."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "!= (Is not equal)"
@@ -235,9 +264,10 @@ msgstr ""
 msgid "%(label)s file"
 msgstr "%(label)s датотека"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "%(name)s.csv"
-msgstr ""
+msgstr "%(name)s.csv"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -270,14 +300,19 @@ msgstr ""
 msgid "%(rows)d rows returned"
 msgstr "Враћено %(rows)d редова"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "%(suggestion)s instead of \"%(undefinedParameter)s?\""
 msgid_plural ""
 "%(firstSuggestions)s or %(lastSuggestion)s instead of "
 "\"%(undefinedParameter)s\"?"
-msgstr[0] ""
+msgstr[0] "%(suggestion)s уместо „%(undefinedParameter)s“?"
 msgstr[1] ""
+"%(firstSuggestions)s или %(lastSuggestion)s уместо "
+"„%(undefinedParameter)s“?"
 msgstr[2] ""
+"%(firstSuggestions)s или %(lastSuggestion)s уместо "
+"„%(undefinedParameter)s“?"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -320,9 +355,10 @@ msgstr "%s ЛОЗИНКА ПРИВАТНОГ КЉУЧА SSH ТУНЕЛА"
 msgid "%s Selected"
 msgstr "%s изабрано"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "%s Selected (%s Physical, %s Virtual)"
-msgstr ""
+msgstr "Изабрано: %s (физичких: %s, виртуелних: %s)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -386,12 +422,13 @@ msgstr "%s опција(е)"
 msgid "%s recipients"
 msgstr "%s прималаца"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "%s record"
 msgid_plural "%s records..."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%s запис"
+msgstr[1] "%s записа..."
+msgstr[2] "%s записа..."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -821,11 +858,15 @@ msgstr ">= (Веће или једнако)"
 msgid "A Big Number"
 msgstr "Велики број"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "A JavaScript function that generates a label configuration object"
-msgstr ""
+msgstr "JavaScript функција која генерише објекат конфигурације ознаке"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "A JavaScript function that generates an icon configuration object"
-msgstr ""
+msgstr "JavaScript функција која генерише објекат конфигурације иконе"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "A comma separated list of columns that should be parsed as dates"
@@ -890,8 +931,12 @@ msgstr "Листа ознака које су примењене на овај �
 msgid "A list of tags that have been applied to this dashboard."
 msgstr "Листа ознака које су примењене на ову контролну таблу."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "A list of users who can alter the chart. Searchable by name or username."
 msgstr ""
+"Листа корисника који могу да мењају графикон. Могу се претраживати по "
+"имену или корисничком имену."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "A map of the world, that can indicate values in different countries."
@@ -921,11 +966,16 @@ msgstr "Биће креиран нови графикон."
 msgid "A new dashboard will be created."
 msgstr "Биће креирана нова контролна табла."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "A polar coordinate chart where the circle is broken into wedges of equal "
 "angle, and the value represented by any wedge is illustrated by its area,"
 " rather than its radius or sweep angle."
 msgstr ""
+"Графикон у поларним координатама у коме је круг подељен на исечке "
+"једнаког угла, а вредност сваког исечка приказана је његовом површином, а"
+" не полупречником или углом."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "A readable URL for your dashboard"
@@ -992,8 +1042,10 @@ msgstr ""
 msgid "AND"
 msgstr "И"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "APPLY"
-msgstr ""
+msgstr "ПРИМЕНИ"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "APR"
@@ -1011,8 +1063,10 @@ msgstr "АВГ"
 msgid "About"
 msgstr "О програму"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Access & ownership"
-msgstr ""
+msgstr "Приступ и власништво"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Access token"
@@ -1184,8 +1238,10 @@ msgstr "Додај детаље сертификације за ову конт�
 msgid "Add color for positive/negative change"
 msgstr "Додај боју за позитивну/негативну промену"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Add colors to cell bars for +/-"
-msgstr ""
+msgstr "Додај боје тракама ћелија за +/-"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Add cross-filter"
@@ -1321,12 +1377,13 @@ msgstr "Додај у картице"
 msgid "Added"
 msgstr "Додато"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Added 1 new column to the virtual dataset"
 msgid_plural "Added %s new columns to the virtual dataset"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Додата је %s нова колона у виртуелни скуп података"
+msgstr[1] "Додате су %s нове колоне у виртуелни скуп података"
+msgstr[2] "Додато је %s нових колона у виртуелни скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -1464,10 +1521,14 @@ msgstr ""
 "Агрегатна функција примењена на листу тачака у сваком кластеру за израду "
 "ознаке кластера."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Aggregate function to apply when pivoting and computing the total rows "
 "and columns"
 msgstr ""
+"Агрегатна функција која се примењује при пивотирању и израчунавању "
+"укупних редова и колона"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -1485,8 +1546,10 @@ msgstr "Агрегација"
 msgid "Aggregation Method"
 msgstr "Метод агрегације"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Aggregation function"
-msgstr ""
+msgstr "Функција агрегације"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Alert"
@@ -1692,9 +1755,13 @@ msgstr ""
 msgid "Allow this database to be explored"
 msgstr "Дозволи истраживање ове базе података"
 
-# Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
+# Machine-translated (Claude), needs native review
+# Changed from the upstream-reviewed text to keep the do-not-translate term
+# 'SQL Lab'; was: 'Dozvoli izvršavanje upita nad ovom bazom podataka u SQL
+# laboratoriji'
+#, fuzzy
 msgid "Allow this database to be queried in SQL Lab"
-msgstr "Дозволи извршавање упита над овом базом података у SQL лабораторији"
+msgstr "Дозволи извршавање упита над овом базом података у SQL Lab-у"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Allow users to select multiple values"
@@ -1844,13 +1911,17 @@ msgstr "Дошло је до грешке приликом преузимања 
 msgid "An error occurred while fetching available themes"
 msgstr "Дошло је до грешке приликом преузимања доступних тема"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "An error occurred while fetching chart owners values: %s"
-msgstr ""
+msgstr "Дошло је до грешке приликом преузимања вредности власника графикона: %s"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "An error occurred while fetching dashboard owner values: %s"
 msgstr ""
+"Дошло је до грешке приликом преузимања вредности власника контролне "
+"табле: %s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "An error occurred while fetching dashboards"
@@ -1880,12 +1951,19 @@ msgstr ""
 "Дошло је до грешке приликом преузимања вредности извора података скупа "
 "података: %s"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "An error occurred while fetching dataset owner values: %s"
 msgstr ""
+"Дошло је до грешке приликом преузимања вредности власника скупа података:"
+" %s"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "An error occurred while fetching dataset related data"
 msgstr ""
+"Дошло је до грешке приликом преузимања података повезаних са скупом "
+"података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -1894,17 +1972,19 @@ msgstr ""
 "Дошло је до грешке приликом преузимања података повезаних са скупом "
 "података: %s"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "An error occurred while fetching datasets: %s"
-msgstr ""
+msgstr "Дошло је до грешке приликом преузимања скупова података: %s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "An error occurred while fetching function names."
 msgstr "Дошло је до грешке приликом преузимања имена функција."
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "An error occurred while fetching owners values: %s"
-msgstr ""
+msgstr "Дошло је до грешке приликом преузимања вредности власника: %s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -1915,13 +1995,19 @@ msgstr "Дошло је до грешке приликом преузимања 
 msgid "An error occurred while fetching tab state"
 msgstr "Дошло је до грешке приликом преузимања стања картице"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "An error occurred while fetching table metadata"
-msgstr ""
+msgstr "Дошло је до грешке приликом преузимања метаподатака табеле"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "An error occurred while fetching table metadata. Please contact your "
 "administrator."
 msgstr ""
+"Дошло је до грешке приликом преузимања метаподатака табеле. Обратите се "
+"администратору."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -2239,10 +2325,15 @@ msgstr "Примењени филтери (%s)"
 msgid "Applied filters: %s"
 msgstr "Примењени филтери: %s"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Applied rolling window did not return any data. Please make sure the "
 "source query satisfies the minimum periods defined in the rolling window."
 msgstr ""
+"Примењени клизни прозор није вратио никакве податке. Проверите да ли "
+"изворни упит задовољава минималан број периода дефинисан у клизном "
+"прозору."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Apply"
@@ -2326,8 +2417,10 @@ msgstr "Да ли сте сигурни да желите да обришете 
 msgid "Are you sure you want to delete the selected dashboards?"
 msgstr "Да ли сте сигурни да желите да обришете изабране контролне панеле?"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Are you sure you want to delete the selected datasets?"
-msgstr ""
+msgstr "Да ли сте сигурни да желите да обришете изабране скупове података?"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Are you sure you want to delete the selected groups?"
@@ -2365,8 +2458,10 @@ msgstr "Да ли сте сигурни да желите да обришете 
 msgid "Are you sure you want to overwrite this dataset?"
 msgstr "Да ли сте сигурни да желите да препишете овај скуп података?"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Are you sure you want to proceed?"
-msgstr ""
+msgstr "Да ли сте сигурни да желите да наставите?"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -2438,8 +2533,10 @@ msgstr ""
 msgid "Arrow"
 msgstr "Стрелица"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Ascending"
-msgstr ""
+msgstr "Растуће"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Assign a set of parameters as"
@@ -2521,8 +2618,10 @@ msgstr "Аутоматска величина ове колоне"
 msgid "Autosize all columns"
 msgstr "Аутоматска величина свих колона"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Available Handlebars Helpers in Superset:"
-msgstr ""
+msgstr "Доступне Handlebars помоћне функције у Superset-у:"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Available sorting modes:"
@@ -2600,8 +2699,10 @@ msgstr "Вредности назад"
 msgid "Bad formula."
 msgstr "Погрешна формула."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Bad spatial key"
-msgstr ""
+msgstr "Неисправан просторни кључ"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Bar"
@@ -2615,8 +2716,10 @@ msgstr "Стубичасти графикон"
 msgid "Bar Charts are used to show metrics as a series of bars."
 msgstr "Стубичасти графикони се користе за приказивање метрика као серије стубова."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Bar Values"
-msgstr ""
+msgstr "Вредности трака"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Bar orientation"
@@ -2634,9 +2737,10 @@ msgstr "Основни експонент"
 msgid "Base height"
 msgstr "Основна висина"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Base layer map style. See Mapbox documentation: %s"
-msgstr ""
+msgstr "Стил мапе основног слоја. Погледајте Mapbox документацију: %s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Base slope"
@@ -2835,8 +2939,10 @@ msgstr ""
 msgid "Bubble Chart"
 msgstr "Графикон мехурића"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Bubble Chart (legacy)"
-msgstr ""
+msgstr "Мехурасти графикон (застарело)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Bubble Color"
@@ -2903,15 +3009,19 @@ msgstr "По кључу: користи имена редова као кључ 
 msgid "By value: use metric values as sorting key"
 msgstr "По вредности: користи вредности метрика као кључ за сортирање"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "CANCEL"
-msgstr ""
+msgstr "ОТКАЖИ"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "CC recipients"
 msgstr "CC примаоци"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "COPY QUERY"
-msgstr ""
+msgstr "КОПИРАЈ УПИТ"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "CREATE TABLE AS"
@@ -2991,8 +3101,10 @@ msgstr ""
 "последња изјава SELECT. Уверите се да ваш упит има SELECT као последњу "
 "изјаву. Затим покушајте поново да покренете упит."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "CUSTOM"
-msgstr ""
+msgstr "CUSTOM"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -3042,8 +3154,10 @@ msgstr "Кеширано"
 msgid "Cached %s"
 msgstr "Кеширано %s"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Cached value not found"
-msgstr ""
+msgstr "Кеширана вредност није пронађена"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Calculate contribution per series or row"
@@ -3359,12 +3473,13 @@ msgstr "Опције графикона"
 msgid "Chart Orientation"
 msgstr "Оријентација графикона"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Chart Owner: %s"
 msgid_plural "Chart Owners: %s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Власник графикона: %s"
+msgstr[1] "Власници графикона: %s"
+msgstr[2] "Власници графикона: %s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Chart Source"
@@ -3449,8 +3564,10 @@ msgstr "Графикон није пронађен"
 msgid "Chart options"
 msgstr "Опције графикона"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Chart owners"
-msgstr ""
+msgstr "Власници графикона"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Chart parameters are invalid."
@@ -3476,8 +3593,10 @@ msgstr "Наслов графикона"
 msgid "Chart type"
 msgstr "Тип графикона"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Chart type requires a dataset"
-msgstr ""
+msgstr "Тип графикона захтева скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Chart was saved but could not be added to the selected tab."
@@ -3531,11 +3650,15 @@ msgstr "Означите да бисте приморали датумске п�
 msgid "Child label position"
 msgstr "Позиција подређене ознаке"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Choice of [Label] must be present in [Group By]"
-msgstr ""
+msgstr "Избор за [Ознака] мора бити присутан у [Групиши по]"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Choice of [Point Radius] must be present in [Group By]"
-msgstr ""
+msgstr "Избор за [Полупречник тачке] мора бити присутан у [Групиши по]"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Choose a chart for displaying on the map"
@@ -3549,8 +3672,10 @@ msgstr "Изаберите графикон или контролну таблу
 msgid "Choose a database..."
 msgstr "Изаберите базу података..."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Choose a dataset"
-msgstr ""
+msgstr "Изаберите скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Choose a delimiter"
@@ -3987,8 +4112,10 @@ msgstr "Колона \"%(column)s\" није нумеричка или не по
 msgid "Column Configuration"
 msgstr "Конфигурација колоне"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Column Formatting"
-msgstr ""
+msgstr "Форматирање колоне"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Column Settings"
@@ -4082,9 +4209,10 @@ msgstr "Фасцикла колона може садржати само ста�
 msgid "Columns missing in dataset: %(invalid_columns)s"
 msgstr "Колоне које недостају у скупу података: %(invalid_columns)s"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Columns missing in datasource: %(invalid_columns)s"
-msgstr ""
+msgstr "Колоне које недостају у извору података: %(invalid_columns)s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Columns subtotal position"
@@ -4174,11 +4302,16 @@ msgstr ""
 "Свака група је мапирана на ред, а промена током времена се приказује "
 "дужином трака и бојом."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Compares metrics between different time periods. Displays time series "
 "data across multiple periods (like weeks or months) to show period-over-"
 "period trends and patterns."
 msgstr ""
+"Пореди метрике између различитих временских периода. Приказује податке "
+"временских серија кроз више периода (нпр. недеља или месеци) како би "
+"показао трендове и обрасце из периода у период."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Comparison"
@@ -4314,9 +4447,13 @@ msgstr "Повежи"
 msgid "Connect Google Sheet"
 msgstr "Повежи Google табелу"
 
-# Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
+# Machine-translated (Claude), needs native review
+# Changed from the upstream-reviewed text to keep the do-not-translate term
+# 'Google Sheets'; was: 'Poveži Google tabele kao tabele sa ovom bazom
+# podataka'
+#, fuzzy
 msgid "Connect Google Sheets as tables to this database"
-msgstr "Повежи Google табеле као табеле са овом базом података"
+msgstr "Повежи Google Sheets као табеле са овом базом података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Connect a database"
@@ -4382,8 +4519,10 @@ msgstr "Допринос"
 msgid "Contribution Mode"
 msgstr "Режим доприноса"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Contributions"
-msgstr ""
+msgstr "Доприноси"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Control"
@@ -4487,15 +4626,19 @@ msgstr "Процена трошкова"
 msgid "Could not connect to database: \"%(database)s\""
 msgstr "Није могуће повезати се са базом података: \"%(database)s\""
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Could not determine datasource type"
-msgstr ""
+msgstr "Није могуће одредити тип извора података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Could not fetch all saved charts"
 msgstr "Није могуће преузети све сачуване графиконе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Could not find viz object"
-msgstr ""
+msgstr "Није могуће пронаћи објекат визуализације"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Could not load database driver"
@@ -4519,17 +4662,25 @@ msgstr "Није могуће потврдити корисника у трен�
 msgid "Count"
 msgstr "Број"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Count Unique Values"
-msgstr ""
+msgstr "Број јединствених вредности"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Count as Fraction of Columns"
-msgstr ""
+msgstr "Број као удео у колонама"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Count as Fraction of Rows"
-msgstr ""
+msgstr "Број као удео у редовима"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Count as Fraction of Total"
-msgstr ""
+msgstr "Број као удео у укупном"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Country"
@@ -4596,11 +4747,15 @@ msgstr "Креирај индекс dataframe-а"
 msgid "Create dataset"
 msgstr "Креирај скуп података"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Create matrix columns by placing charts side-by-side"
-msgstr ""
+msgstr "Направи колоне матрице постављањем графикона један поред другог"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Create matrix rows by stacking charts vertically"
-msgstr ""
+msgstr "Направи редове матрице слагањем графикона вертикално"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Create new chart"
@@ -4883,8 +5038,10 @@ msgstr "Датуми у формату DD/MM, међународни и евро
 msgid "DEC"
 msgstr "DEC"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "DELETE"
-msgstr ""
+msgstr "DELETE"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "DML"
@@ -5140,13 +5297,17 @@ msgstr "База података не постоји"
 msgid "Database does not support subqueries"
 msgstr "База података не подржава подупите"
 
-# Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
+# Machine-translated (Claude), needs native review
+# Changed from the upstream-reviewed text to keep the do-not-translate term
+# 'Superset'; was: 'Drajver baze podataka za uvoz možda nije instaliran.
+# Posetite stranicu dokumentacije Superseta za instrukcije za instalaciju: '
+#, fuzzy
 msgid ""
 "Database driver for importing maybe not installed. Visit the Superset "
 "documentation page for installation instructions: "
 msgstr ""
 "Драјвер базе података за увоз можда није инсталиран. Посетите страницу "
-"документације Суперсета за инструкције за инсталацију: "
+"документације Superset-а за инструкције за инсталацију: "
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Database error"
@@ -5241,8 +5402,10 @@ msgstr "Скуп података није могао бити ажуриран.
 msgid "Dataset does not exist"
 msgstr "Скуп података не постоји"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Dataset imported"
-msgstr ""
+msgstr "Скуп података је увезен"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Dataset is required"
@@ -5374,38 +5537,60 @@ msgstr "Одређује по којој колони или мери се со�
 msgid "Decimal character"
 msgstr "Децимални знак"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - 3D Grid"
-msgstr ""
+msgstr "Deck.gl - 3D мрежа"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - 3D HEX"
-msgstr ""
+msgstr "Deck.gl - 3D HEX"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - Arc"
-msgstr ""
+msgstr "Deck.gl - лук"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - Contour"
-msgstr ""
+msgstr "Deck.gl - контура"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - GeoJSON"
-msgstr ""
+msgstr "Deck.gl - GeoJSON"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - Heatmap"
-msgstr ""
+msgstr "Deck.gl - топлотна мапа"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - Multiple Layers"
-msgstr ""
+msgstr "Deck.gl - више слојева"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - Paths"
-msgstr ""
+msgstr "Deck.gl - путање"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - Polygon"
-msgstr ""
+msgstr "Deck.gl - полигон"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - Scatter plot"
-msgstr ""
+msgstr "Deck.gl - дијаграм расејања"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Deck.gl - Screen Grid"
-msgstr ""
+msgstr "Deck.gl - мрежа екрана"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Deck.gl Layer Visibility"
@@ -5511,20 +5696,29 @@ msgstr ""
 "Подразумевана вредност се аутоматски поставља када је означено "
 "„Подразумевано изабери прву вредност филтера“"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Define a function that receives the input and outputs the content for a "
 "tooltip"
-msgstr ""
+msgstr "Дефинишите функцију која прима улаз и враћа садржај облачића"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Define a function that returns a URL to navigate to when user clicks"
-msgstr ""
+msgstr "Дефинишите функцију која враћа URL на који се прелази када корисник кликне"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Define a javascript function that receives the data array used in the "
 "visualization and is expected to return a modified version of that array."
 " This can be used to alter properties of the data, filter, or enrich the "
 "array."
 msgstr ""
+"Дефинишите JavaScript функцију која прима низ података коришћен у "
+"визуализацији и треба да врати измењену верзију тог низа. Ово се може "
+"користити за измену својстава података, филтрирање или обогаћивање низа."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Define color breakpoints for the data"
@@ -5619,11 +5813,15 @@ msgstr "Обрисати %s?"
 msgid "Delete Annotation?"
 msgstr "Обрисати анотацију?"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Delete Database?"
-msgstr ""
+msgstr "Обрисати базу података?"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Delete Dataset?"
-msgstr ""
+msgstr "Обрисати скуп података?"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Delete Group?"
@@ -5669,8 +5867,10 @@ msgstr "Обриши анотацију"
 msgid "Delete dashboard tab?"
 msgstr "Обрисати картицу контролне табле?"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Delete database"
-msgstr ""
+msgstr "Обриши базу података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Delete email report"
@@ -5869,8 +6069,10 @@ msgstr "Густина"
 msgid "Dependent on"
 msgstr "Зависи од"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Descending"
-msgstr ""
+msgstr "Опадајуће"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Description"
@@ -5975,8 +6177,10 @@ msgstr ""
 "откривање детаља у вашим подацима. Димензије утичу на ниво детаља у "
 "приказу."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Directed Force Layout"
-msgstr ""
+msgstr "Распоред усмерених сила"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Directional"
@@ -6189,8 +6393,10 @@ msgstr "Преузми"
 msgid "Download as Image"
 msgstr "Преузми као слику"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Download as image"
-msgstr ""
+msgstr "Преузми као слику"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Download is on the way"
@@ -6425,8 +6631,10 @@ msgstr "Трајање у мс (1.40008 => 1ms 400µs 80ns)"
 msgid "Duration in ms (100.40008 => 100ms 400µs 80ns)"
 msgstr "Трајање у мс (100.40008 => 100ms 400µs 80ns)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Duration in ms (10500 => 0:10.5)"
-msgstr ""
+msgstr "Трајање у мс (10500 => 0:10.5)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Duration in ms (66000 => 1m 6s)"
@@ -6561,8 +6769,10 @@ msgstr "Уреди контролну таблу"
 msgid "Edit database"
 msgstr "Уреди базу података"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Edit dataset"
-msgstr ""
+msgstr "Уреди скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Edit email report"
@@ -6756,18 +6966,24 @@ msgstr "Омогући прогнозирање"
 msgid "Enable graph roaming"
 msgstr "Омогући слободно кретање по графикону"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Enable horizontal layout (columns)"
-msgstr ""
+msgstr "Омогући хоризонтални распоред (колоне)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Enable icon JavaScript mode"
-msgstr ""
+msgstr "Омогући JavaScript режим за иконе"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Enable icons"
 msgstr "Омогући иконе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Enable label JavaScript mode"
-msgstr ""
+msgstr "Омогући JavaScript режим за ознаке"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Enable labels"
@@ -6789,14 +7005,20 @@ msgstr "Омогући проширивање редова у шемама"
 msgid "Enable server side pagination of results (experimental feature)"
 msgstr "Омогући пагинацију резултата на страни сервера (експериментална функција)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Enable vertical layout (rows)"
-msgstr ""
+msgstr "Омогући вертикални распоред (редови)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Enables custom icon configuration via JavaScript"
-msgstr ""
+msgstr "Омогућава прилагођену конфигурацију икона путем JavaScript-а"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Enables custom label configuration via JavaScript"
-msgstr ""
+msgstr "Омогућава прилагођену конфигурацију ознака путем JavaScript-а"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Enables rendering of icons for GeoJSON points"
@@ -6806,11 +7028,16 @@ msgstr "Омогућава приказ икона за GeoJSON тачке"
 msgid "Enables rendering of labels for GeoJSON points"
 msgstr "Омогућава приказ ознака за GeoJSON тачке"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Encountered invalid NULL spatial entry,"
 "                                        please consider filtering those "
 "out"
 msgstr ""
+"Пронађен је неважећи NULL просторни унос,"
+"                                        размислите о томе да такве уносе "
+"исфилтрирате"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "End"
@@ -6881,8 +7108,10 @@ msgstr "Унесите примарне акредитиве"
 msgid "Enter a name for this sheet"
 msgstr "Унесите назив за овај лист"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Enter a new title for the tab"
-msgstr ""
+msgstr "Унесите нови наслов картице"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Enter a part of the object name"
@@ -7123,8 +7352,10 @@ msgstr "Процени трошак пре извршавања упита"
 msgid "Event"
 msgstr "Догађај"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Event flow"
-msgstr ""
+msgstr "Ток догађаја"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Event time column"
@@ -7166,15 +7397,19 @@ msgstr "Формат Excel фајла не може бити утврђен"
 msgid "Excel upload"
 msgstr "Учитавање Excel фајла"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Exclude layers (deck.gl)"
-msgstr ""
+msgstr "Искључи слојеве (deck.gl)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Exclude selected values"
 msgstr "Изузми изабране вредности"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Excluded roles"
-msgstr ""
+msgstr "Искључене улоге"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Executed SQL"
@@ -7339,13 +7574,19 @@ msgstr "Извези у оригинални .CSV"
 msgid "Export to pivoted .CSV"
 msgstr "Извези у укрштени .CSV"
 
-# Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
+# Machine-translated (Claude), needs native review
+# Changed from the upstream-reviewed text to keep the do-not-translate term
+# 'SQL Lab'; was: 'Izloži bazu podataka u SQL laboratoriji'
+#, fuzzy
 msgid "Expose database in SQL Lab"
-msgstr "Изложи базу података у SQL лабораторији"
+msgstr "Изложи базу података у SQL Lab-у"
 
-# Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
+# Machine-translated (Claude), needs native review
+# Changed from the upstream-reviewed text to keep the do-not-translate term
+# 'SQL Lab'; was: 'Izloži u SQL laboratoriji'
+#, fuzzy
 msgid "Expose in SQL Lab"
-msgstr "Изложи у SQL лабораторији"
+msgstr "Изложи у SQL Lab-у"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Expression cannot be empty"
@@ -7371,16 +7612,23 @@ msgstr "Додатне контроле"
 msgid "Extra Parameters"
 msgstr "Додатни параметри"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Extra data for JS"
-msgstr ""
+msgstr "Додатни подаци за JS"
 
-#, python-brace-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
 " \"details\": \"This table is the source of truth.\" }, "
 "\"warning_markdown\": \"This is a warning.\" }`."
 msgstr ""
+"Додатни подаци за навођење метаподатака табеле. Тренутно су подржани "
+"метаподаци у формату: `{ \"certification\": { \"certified_by\": \"Data "
+"Platform Team\", \"details\": \"This table is the source of truth.\" }, "
+"\"warning_markdown\": \"This is a warning.\" }`."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Extra parameters for use in jinja templated queries"
@@ -7406,8 +7654,10 @@ msgstr "Екструдовано"
 msgid "FEB"
 msgstr "FEB"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "FIT DATA"
-msgstr ""
+msgstr "FIT DATA"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "FRI"
@@ -7446,8 +7696,10 @@ msgstr "Неуспело креирање извештаја"
 msgid "Failed to execute %(query)s"
 msgstr "Неуспело извршавање %(query)s"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Failed to fetch user info:"
-msgstr ""
+msgstr "Преузимање информација о кориснику није успело:"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Failed to generate chart edit URL"
@@ -7461,9 +7713,10 @@ msgstr "Неуспело учитавање података графикона"
 msgid "Failed to load chart data."
 msgstr "Неуспело учитавање података графикона."
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Failed to load columns for dataset %s"
-msgstr ""
+msgstr "Неуспело учитавање колона за скуп података %s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Failed to load top values"
@@ -7579,9 +7832,10 @@ msgstr "Преузето %s"
 msgid "Fetching"
 msgstr "Преузимање"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Field cannot be decoded by JSON. %(json_error)s"
-msgstr ""
+msgstr "Поље не може бити декодирано JSON-ом. %(json_error)s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -7854,16 +8108,25 @@ msgstr ""
 msgid "For further instructions, consult the"
 msgstr "За даља упутства, погледајте"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "For more information about objects are in context in the scope of this "
 "function, refer to the"
 msgstr ""
+"За више информација о објектима који су доступни у контексту ове функције"
+" погледајте"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "For regular filters, these are the roles this filter will be applied to. "
 "For base filters, these are the roles that the filter DOES NOT apply to, "
 "e.g. Admin if admin should see all data."
 msgstr ""
+"За обичне филтере, ово су улоге на које ће се филтер применити. За "
+"основне филтере, ово су улоге на које се филтер НЕ примењује, нпр. Admin "
+"ако администратор треба да види све податке."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Forbidden"
@@ -7975,8 +8238,10 @@ msgstr ""
 msgid "Formatted CSV attached in email"
 msgstr "Форматиран CSV приложен у е-поруци"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Formatted date"
-msgstr ""
+msgstr "Форматирани датум"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Formatted value"
@@ -8038,8 +8303,10 @@ msgstr "Додатно прилагодите приказ сваке колон
 msgid "Further customize how to display each metric"
 msgstr "Додатно прилагодите приказ сваке метрике"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "GROUP BY"
-msgstr ""
+msgstr "GROUP BY"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Gantt Chart"
@@ -8102,8 +8369,10 @@ msgstr "Колона геометрије"
 msgid "Get the last date by the date unit."
 msgstr "Добавља задњи датум према јединици датума."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Get the specify date for the holiday"
-msgstr ""
+msgstr "Добавља одређени датум за празник"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Give access to multiple catalogs in a single database connection."
@@ -8153,8 +8422,10 @@ msgstr "Веће или једнако (>=)"
 msgid "Greater than (>)"
 msgstr "Веће од (>)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Green for increase, red for decrease"
-msgstr ""
+msgstr "Зелена за раст, црвена за пад"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Grid"
@@ -8301,8 +8572,10 @@ msgstr "Почетна"
 msgid "Horizon Chart"
 msgstr "Хоризонт графикон"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Horizon Charts"
-msgstr ""
+msgstr "Хоризонт графикони"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Horizontal"
@@ -8316,8 +8589,10 @@ msgstr "Хоризонтално (Врх)"
 msgid "Horizontal alignment"
 msgstr "Хоризонтално поравнање"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Horizontal layout (columns)"
-msgstr ""
+msgstr "Хоризонтални распоред (колоне)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Host"
@@ -8374,11 +8649,15 @@ msgstr "Огроман"
 msgid "ISO 3166-2 Codes"
 msgstr "ISO 3166-2 кодови"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "ISO 8601"
-msgstr ""
+msgstr "ISO 8601"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Icon JavaScript config generator"
-msgstr ""
+msgstr "JavaScript генератор конфигурације икона"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Icon URL"
@@ -8400,6 +8679,8 @@ msgstr "ID"
 msgid "Id of root node of the tree."
 msgstr "Ид коренског чвора стабла."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "If Presto or Trino, all the queries in SQL Lab are going to be executed "
 "as the currently logged on user who must have permission to run them. If "
@@ -8407,6 +8688,11 @@ msgid ""
 "service account, but impersonate the currently logged on user via "
 "hive.server2.proxy.user property."
 msgstr ""
+"За Presto или Trino, сви упити у SQL Lab-у извршаваће се као тренутно "
+"пријављени корисник, који мора имати дозволу да их покрене. За Hive, ако "
+"је hive.server2.enable.doAs омогућено, упити ће се извршавати као "
+"сервисни налог, али уз представљање као тренутно пријављени корисник "
+"путем својства hive.server2.proxy.user."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "If a metric is specified, sorting will be done based on the metric value"
@@ -8458,8 +8744,12 @@ msgstr "Слика (PNG) уграђена у е-пошту"
 msgid "Image download failed, please refresh and try again."
 msgstr "Преузимање слике није успело, освежите страницу и покушајте поново."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Impersonate logged in user (Presto, Trino, Drill, Hive, and Google Sheets)"
 msgstr ""
+"Представљај се као пријављени корисник (Presto, Trino, Drill, Hive и "
+"Google Sheets)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Import"
@@ -8502,8 +8792,10 @@ msgstr "Увези базу података из фајла"
 msgid "Import dataset failed for an unknown reason"
 msgstr "Увоз скупа података није успео из непознатог разлога"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Import datasets"
-msgstr ""
+msgstr "Увези скупове података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Import queries"
@@ -8846,20 +9138,24 @@ msgstr "Неважећи тип резултата: %(result_type)s"
 msgid "Invalid rolling_type: %(type)s"
 msgstr "Неважећи rolling_type: %(type)s"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Invalid spatial point encountered: %(latlong)s"
-msgstr ""
+msgstr "Пронађена је неважећа просторна тачка: %(latlong)s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Invalid state."
 msgstr "Неважеће стање."
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Invalid tab ids: %s(tab_ids)"
-msgstr ""
+msgstr "Неважећи ID-ови картица: %s(tab_ids)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Invalid username or password"
-msgstr ""
+msgstr "Неисправно корисничко име или лозинка"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Inverse selection"
@@ -9001,14 +9297,20 @@ msgstr "JUN"
 msgid "January"
 msgstr "Јануар"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "JavaScript data interceptor"
-msgstr ""
+msgstr "JavaScript пресретач података"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "JavaScript onClick href"
-msgstr ""
+msgstr "JavaScript onClick href"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "JavaScript tooltip generator"
-msgstr ""
+msgstr "JavaScript генератор облачића"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Jinja templating"
@@ -9042,8 +9344,10 @@ msgstr "Кључ"
 msgid "Keyboard shortcuts"
 msgstr "Пречице на тастатури"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Keys for table"
-msgstr ""
+msgstr "Кључеви табеле"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Kilometers"
@@ -9057,8 +9361,10 @@ msgstr "Ознака"
 msgid "Label Contents"
 msgstr "Садржај ознаке"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Label JavaScript config generator"
-msgstr ""
+msgstr "JavaScript генератор конфигурације ознака"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Label Line"
@@ -9124,14 +9430,20 @@ msgstr "Означавање"
 msgid "Labels"
 msgstr "Ознаке"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Labels for the marker lines"
-msgstr ""
+msgstr "Ознаке за линије маркера"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Labels for the markers"
-msgstr ""
+msgstr "Ознаке за маркере"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Labels for the ranges"
-msgstr ""
+msgstr "Ознаке за опсеге"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Languages"
@@ -9360,8 +9672,10 @@ msgstr "Ограничење"
 msgid "Limit type"
 msgstr "Тип ограничења"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Limits the number of cells that get retrieved."
-msgstr ""
+msgstr "Ограничава број ћелија које се преузимају."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Limits the number of rows that get displayed."
@@ -9465,15 +9779,19 @@ msgstr "Листа група"
 msgid "List Roles"
 msgstr "Листа улога"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "List Unique Values"
-msgstr ""
+msgstr "Листа јединствених вредности"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "List Users"
 msgstr "Листа корисника"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "List of extra columns made available in JavaScript functions"
-msgstr ""
+msgstr "Листа додатних колона доступних у JavaScript функцијама"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "List of n+1 values for bucketing metric into n buckets."
@@ -9483,11 +9801,15 @@ msgstr "Листа од н+1 вредности за груписање метр
 msgid "List of the column names that should be read"
 msgstr "Листа назива колона које треба прочитати"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "List of values to mark with lines"
-msgstr ""
+msgstr "Листа вредности које се означавају линијама"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "List of values to mark with triangles"
-msgstr ""
+msgstr "Листа вредности које се означавају троугловима"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "List updated"
@@ -9509,8 +9831,10 @@ msgstr "Учитани подаци кеширани"
 msgid "Loaded from cache"
 msgstr "Учитано из кеша"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Loading deck.gl layers..."
-msgstr ""
+msgstr "Учитавање deck.gl слојева..."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Loading timezones..."
@@ -9663,8 +9987,10 @@ msgstr "Лош захтев. Очекују се аргументи slice_id и�
 msgid "Manage"
 msgstr "Управљај"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Manage dashboard owners and access permissions"
-msgstr ""
+msgstr "Управљај власницима контролне табле и дозволама приступа"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Manage email report"
@@ -9694,11 +10020,15 @@ msgstr "Опције мапе"
 msgid "Map Style"
 msgstr "Стил мапе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "MapBox"
-msgstr ""
+msgstr "MapBox"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Mapbox"
-msgstr ""
+msgstr "Mapbox"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "March"
@@ -9820,8 +10150,10 @@ msgstr "Средња вредност вредности током наведе
 msgid "Mean values"
 msgstr "Средње вредности"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Median"
-msgstr ""
+msgstr "Медијана"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -10014,8 +10346,10 @@ msgstr ""
 msgid "Metrics"
 msgstr "Метрике"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Metrics / Dimensions"
-msgstr ""
+msgstr "Метрике / димензије"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Metrics folder can only contain metric items"
@@ -10138,8 +10472,10 @@ msgstr "Недостаје OAuth2 токен"
 msgid "Missing URL parameters"
 msgstr "Недостају URL параметри"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Missing dataset"
-msgstr ""
+msgstr "Недостаје скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Mixed Chart"
@@ -10154,12 +10490,13 @@ msgstr "Измењено"
 msgid "Modified %s"
 msgstr "Измењено %s"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Modified 1 column in the virtual dataset"
 msgid_plural "Modified %s columns in the virtual dataset"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Измењена је %s колона у виртуелном скупу података"
+msgstr[1] "Измењене су %s колоне у виртуелном скупу података"
+msgstr[2] "Измењено је %s колона у виртуелном скупу података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Modified by"
@@ -10252,8 +10589,10 @@ msgstr "Мора бити јединствено"
 msgid "Must choose either a chart or a dashboard"
 msgstr "Морате одабрати графикон или контролну таблу"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Must have a [Group By] column to have 'count' as the [Label]"
-msgstr ""
+msgstr "Мора постојати колона у [Групиши по] да би 'count' био [Ознака]"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Must provide credentials for the SSH Tunnel"
@@ -10279,8 +10618,10 @@ msgstr "Моја метрика"
 msgid "N/A"
 msgstr "Н/А"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "NOT GROUPED BY"
-msgstr ""
+msgstr "NOT GROUPED BY"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "NOV"
@@ -10479,8 +10820,10 @@ msgstr "Није пронађен компатибилан каталог"
 msgid "No compatible columns found"
 msgstr "Нису пронађене компатибилне колоне"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "No compatible datasets found"
-msgstr ""
+msgstr "Нису пронађени компатибилни скупови података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "No compatible schema found"
@@ -10508,8 +10851,10 @@ msgstr "Нема доступних база података"
 msgid "No databases match your search"
 msgstr "Ниједна база података не одговара вашој претрази"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "No deck.gl multi layer charts found in this dashboard."
-msgstr ""
+msgstr "На овој контролној табли нису пронађени deck.gl вишеслојни графикони."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "No description available."
@@ -10601,11 +10946,15 @@ msgstr "Нема улога"
 msgid "No roles yet"
 msgstr "Још нема улога"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "No rows were returned for this dataset"
-msgstr ""
+msgstr "За овај скуп података нису враћени никакви редови"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "No samples were returned for this dataset"
-msgstr ""
+msgstr "За овај скуп података нису враћени никакви узорци"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "No saved expressions found"
@@ -10913,8 +11262,10 @@ msgstr "OK"
 msgid "OR"
 msgstr "ИЛИ"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "OVERWRITE"
-msgstr ""
+msgstr "OVERWRITE"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "October"
@@ -11173,8 +11524,10 @@ msgstr "Оријентација стабла"
 msgid "Original"
 msgstr "Оригинал"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Original table column order"
-msgstr ""
+msgstr "Изворни редослед колона табеле"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Original value"
@@ -11284,22 +11637,34 @@ msgstr "Препиши текст у едитору упитом на ову т�
 msgid "Owned Created or Favored"
 msgstr "Власништво, креирано или омиљено"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Owner"
-msgstr ""
+msgstr "Власник"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Owners"
-msgstr ""
+msgstr "Власници"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Owners are invalid"
-msgstr ""
+msgstr "Власници нису важећи"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Owners is a list of users who can alter the dashboard."
-msgstr ""
+msgstr "Власници су листа корисника који могу да мењају контролну таблу."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Owners is a list of users who can alter the dashboard. Searchable by name"
 " or username."
 msgstr ""
+"Власници су листа корисника који могу да мењају контролну таблу. Могу се "
+"претраживати по имену или корисничком имену."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "PDF download failed, please refresh and try again."
@@ -11366,8 +11731,10 @@ msgstr "Део целине"
 msgid "Partition Chart"
 msgstr "Графикон поделе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Partition Diagram"
-msgstr ""
+msgstr "Дијаграм поделе"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Partition Limit"
@@ -11522,11 +11889,15 @@ msgstr "Физички (табела или приказ)"
 msgid "Pick a dimension from which categorical colors are defined"
 msgstr "Изаберите димензију из које се дефинишу категоричке боје"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Pick a metric for x, y and size"
-msgstr ""
+msgstr "Изаберите метрику за x, y и величину"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Pick a metric to display"
-msgstr ""
+msgstr "Изаберите метрику за приказ"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Pick a name to help you identify this database."
@@ -11540,8 +11911,10 @@ msgstr "Изаберите надимак за приказ ове базе по
 msgid "Pick a title for you annotation."
 msgstr "Изаберите наслов за вашу анотацију."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Pick at least one metric"
-msgstr ""
+msgstr "Изаберите најмање једну метрику"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -11669,8 +12042,10 @@ msgstr ""
 msgid "Please choose a valid value"
 msgstr "Изаберите важећу вредност"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Please choose at least one groupby"
-msgstr ""
+msgstr "Изаберите најмање једно поље за груписање"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Please confirm"
@@ -11736,11 +12111,13 @@ msgstr "Поново унесите лозинку."
 msgid "Please re-export your file and try importing again"
 msgstr "Поново извезите своју датотеку и покушајте да је увезете"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Please reach out to the Chart Owner for assistance."
 msgid_plural "Please reach out to the Chart Owners for assistance."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Обратите се власнику графикона за помоћ."
+msgstr[1] "Обратите се власницима графикона за помоћ."
+msgstr[2] "Обратите се власницима графикона за помоћ."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Please save your chart first, then try creating a new email report."
@@ -11758,8 +12135,10 @@ msgstr ""
 msgid "Please select at least one role or group"
 msgstr "Изаберите најмање једну улогу или групу"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Please select both a Dataset and a Chart type to proceed"
-msgstr ""
+msgstr "Изаберите и скуп података и тип графикона да бисте наставили"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -11768,8 +12147,10 @@ msgid ""
 "macro."
 msgstr "Наведите ID скупа података за меру ``%(name)s`` у Jinja макроу."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Please use 3 different metric labels"
-msgstr ""
+msgstr "Користите 3 различита назива метрика"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Plot the distance (like flight paths) between origin and destination."
@@ -11950,8 +12331,10 @@ msgstr "Границе примарне y-осе"
 msgid "Primary y-axis format"
 msgstr "Формат примарне y-осе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Private Channels (Bot in channel)"
-msgstr ""
+msgstr "Приватни канали (бот у каналу)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Private Key"
@@ -12014,8 +12397,10 @@ msgstr "Поставити ознаке изван пите?"
 msgid "Put your code here"
 msgstr "Унесите свој код овде"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Python datetime string pattern"
-msgstr ""
+msgstr "Python образац стринга за датум и време"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Quarter"
@@ -12055,8 +12440,10 @@ msgstr "Историја упита"
 msgid "Query State"
 msgstr "Стање упита"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Query cannot be loaded."
-msgstr ""
+msgstr "Упит није могуће учитати."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Query data in SQL Lab"
@@ -12182,8 +12569,10 @@ msgstr "Тип опсега"
 msgid "Ranges"
 msgstr "Опсези"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Ranges to highlight with shading"
-msgstr ""
+msgstr "Опсези који се истичу сенчењем"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Ranking"
@@ -12217,22 +12606,32 @@ msgstr "Правоугаоник"
 msgid "Recurring (every)"
 msgstr "Понављајуће (сваких)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Red for increase, green for decrease"
-msgstr ""
+msgstr "Црвена за раст, зелена за пад"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Redo the action"
 msgstr "Понови радњу"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Reduce X ticks"
-msgstr ""
+msgstr "Смањи број подеока X осе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Reduces the number of X-axis ticks to be rendered. If true, the x-axis "
 "will not overflow and labels may be missing. If false, a minimum width "
 "will be applied to columns and the width may overflow into an horizontal "
 "scroll."
 msgstr ""
+"Смањује број подеока X осе који се исцртавају. Ако је укључено, X оса се "
+"неће прелити и неке ознаке могу недостајати. Ако је искључено, на колоне "
+"ће се применити минимална ширина и ширина се може прелити у хоризонтално "
+"померање."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Refer to the"
@@ -12303,8 +12702,10 @@ msgstr "Региструј се"
 msgid "Registration date"
 msgstr "Датум регистрације"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Registration hash"
-msgstr ""
+msgstr "Хеш регистрације"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Registration successful"
@@ -12314,12 +12715,19 @@ msgstr "Регистрација успешна"
 msgid "Regular"
 msgstr "Обичан"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Regular filters add where clauses to queries if a user belongs to a role "
 "referenced in the filter, base filters apply filters to all queries "
 "except the roles defined in the filter, and can be used to define what "
 "users can see if no RLS filters within a filter group apply to them."
 msgstr ""
+"Обични филтери додају WHERE клаузуле упитима ако корисник припада улози "
+"наведеној у филтеру, док основни филтери примењују филтере на све упите "
+"осим за улоге дефинисане у филтеру и могу се користити за дефинисање "
+"онога што корисници могу да виде ако се на њих не примењује ниједан RLS "
+"филтер у групи филтера."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Relational"
@@ -12369,15 +12777,18 @@ msgstr "Уклони ставку"
 msgid "Remove query from log"
 msgstr "Уклони упит из дневника"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Remove table preview"
-msgstr ""
+msgstr "Уклони преглед табеле"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Removed 1 column from the virtual dataset"
 msgid_plural "Removed %s columns from the virtual dataset"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Уклоњена је %s колона из виртуелног скупа података"
+msgstr[1] "Уклоњене су %s колоне из виртуелног скупа података"
+msgstr[2] "Уклоњено је %s колона из виртуелног скупа података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Rename tab"
@@ -12667,8 +13078,10 @@ msgstr "Детаљан опис алата"
 msgid "Right"
 msgstr "Десно"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Right Axis Format"
-msgstr ""
+msgstr "Формат десне осе"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Right Axis Metric"
@@ -12712,17 +13125,29 @@ msgstr "Назив улоге је обавезан"
 msgid "Roles"
 msgstr "Улоге"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Roles is a list which defines access to the dashboard. Granting a role "
 "access to a dashboard will bypass dataset level checks. If no roles are "
 "defined, regular access permissions apply."
 msgstr ""
+"Улоге су листа која дефинише приступ контролној табли. Додељивање "
+"приступа контролној табли некој улози заобилази провере на нивоу скупа "
+"података. Ако улоге нису дефинисане, примењују се уобичајене дозволе "
+"приступа."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Roles is a list which defines access to the dashboard. Granting a role "
 "access to a dashboard will bypass dataset level checks.If no roles are "
 "defined, regular access permissions apply."
 msgstr ""
+"Улоге су листа која дефинише приступ контролној табли. Додељивање "
+"приступа контролној табли некој улози заобилази провере на нивоу скупа "
+"података. Ако улоге нису дефинисане, примењују се уобичајене дозволе "
+"приступа."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Rolling Function"
@@ -12999,11 +13424,15 @@ msgstr "НИЗ"
 msgid "SUN"
 msgstr "НЕД"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Sample Standard Deviation"
-msgstr ""
+msgstr "Стандардна девијација узорка"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Sample Variance"
-msgstr ""
+msgstr "Варијанса узорка"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Samples"
@@ -13057,8 +13486,10 @@ msgstr "Сачувај као"
 msgid "Save as Dataset"
 msgstr "Сачувај као скуп података"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Save as dataset"
-msgstr ""
+msgstr "Сачувај као скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Save as new"
@@ -13252,9 +13683,10 @@ msgstr "Скролујте до дна да бисте омогућили пре
 msgid "Search"
 msgstr "Претрага"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Search %s records"
-msgstr ""
+msgstr "Претражи %s записа"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Search / Filter"
@@ -13292,11 +13724,15 @@ msgstr "Претражи колоне..."
 msgid "Search in filters"
 msgstr "Претрага у филтерима"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Search owners"
-msgstr ""
+msgstr "Претражи власнике"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Search roles"
-msgstr ""
+msgstr "Претражи улоге"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Search tags"
@@ -13432,8 +13868,10 @@ msgstr "Изаберите базу података у коју ће се от�
 msgid "Select a database to write a query"
 msgstr "Изаберите базу података за писање упита"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Select a dataset"
-msgstr ""
+msgstr "Изаберите скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Select a delimiter for this data"
@@ -13579,8 +14017,10 @@ msgstr "Изаберите контролне табле"
 msgid "Select database"
 msgstr "Изаберите базу података"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Select database or type to search databases"
-msgstr ""
+msgstr "Изаберите базу података или куцајте за претрагу база података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -13697,8 +14137,10 @@ msgstr "Изаберите или унесите симбол валуте"
 msgid "Select or type dataset name"
 msgstr "Изаберите или унесите назив скупа података"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Select owners"
-msgstr ""
+msgstr "Изаберите власнике"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Select page size"
@@ -13716,8 +14158,10 @@ msgstr "Изаберите сачуване метрике"
 msgid "Select saved queries"
 msgstr "Изаберите сачуване упите"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Select schema or type to search schemas"
-msgstr ""
+msgstr "Изаберите шему или куцајте за претрагу шема"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Select scheme"
@@ -14124,8 +14568,10 @@ msgstr "Прикажи назив метрике"
 msgid "Show Metric Names"
 msgstr "Прикажи називе метрика"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Show Range Filter"
-msgstr ""
+msgstr "Прикажи филтер опсега"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Show Timestamp"
@@ -14195,11 +14641,15 @@ msgstr "Прикажи заглавља колона"
 msgid "Show columns subtotal"
 msgstr "Прикажи подзбир колона"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Show columns total"
-msgstr ""
+msgstr "Прикажи укупан збир колона"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Show data points as circle markers on the lines"
-msgstr ""
+msgstr "Прикажи тачке података као кружне маркере на линијама"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Show empty columns"
@@ -14277,8 +14727,10 @@ msgstr "Прикажи ознаке редова"
 msgid "Show rows subtotal"
 msgstr "Прикажи међузбир редова"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Show rows total"
-msgstr ""
+msgstr "Прикажи укупан збир редова"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Show series values on the chart"
@@ -14292,8 +14744,10 @@ msgstr "Прикажи линије поделе"
 msgid "Show summary"
 msgstr "Прикажи сажетак"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Show the value on top of the bar"
-msgstr ""
+msgstr "Прикажи вредност на врху траке"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Show total"
@@ -14483,8 +14937,10 @@ msgstr ""
 msgid "Solid"
 msgstr "Пуна"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Some roles do not exist"
-msgstr ""
+msgstr "Неке улоге не постоје"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Something went wrong while saving the user info"
@@ -14521,8 +14977,10 @@ msgstr "Жао нам је, дошло је до грешке"
 msgid "Sorry, an error occurred"
 msgstr "Жао нам је, дошло је до грешке"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Sorry, an unknown error occurred"
-msgstr ""
+msgstr "Жао нам је, дошло је до непознате грешке"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Sorry, an unknown error occurred."
@@ -14641,8 +15099,10 @@ msgstr "Сортирај легенду"
 msgid "Sort metric"
 msgstr "Метрика за сортирање"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Sort order"
-msgstr ""
+msgstr "Редослед сортирања"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Sort query by"
@@ -14744,8 +15204,10 @@ msgstr "Слагање серија једне на друге"
 msgid "Stacked"
 msgstr "Слагано"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Stacked Bars"
-msgstr ""
+msgstr "Наслагане траке"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Stacked Style"
@@ -14939,8 +15401,10 @@ msgstr "Подзбир"
 msgid "Success"
 msgstr "Успех"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Successfully changed dataset!"
-msgstr ""
+msgstr "Скуп података је успешно промењен!"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Suffix"
@@ -14954,14 +15418,20 @@ msgstr "Суфикс који се примењује након приказа 
 msgid "Sum"
 msgstr "Збир"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Sum as Fraction of Columns"
-msgstr ""
+msgstr "Збир као удео у колонама"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Sum as Fraction of Rows"
-msgstr ""
+msgstr "Збир као удео у редовима"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Sum as Fraction of Total"
-msgstr ""
+msgstr "Збир као удео у укупном"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Sum of values over specified period"
@@ -15011,8 +15481,10 @@ msgstr "Superset је наишао на неочекивану грешку."
 msgid "Supported databases"
 msgstr "Подржане базе података"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Swap dataset"
-msgstr ""
+msgstr "Замени скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Swap rows and columns"
@@ -15529,8 +16001,10 @@ msgstr "Контролна табла је сачувана"
 msgid "The data source seems to have been deleted"
 msgstr "Изгледа да је извор података обрисан"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "The database"
-msgstr ""
+msgstr "База података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "The database columns that contains lines information"
@@ -15572,8 +16046,10 @@ msgstr "База података је обрисана."
 msgid "The database was not found."
 msgstr "База података није пронађена."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "The dataset"
-msgstr ""
+msgstr "Скуп података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "The dataset associated with this chart no longer exists"
@@ -15618,8 +16094,10 @@ msgstr ""
 msgid "The dataset has been saved"
 msgstr "Скуп података је сачуван"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "The dataset linked to this chart may have been deleted."
-msgstr ""
+msgstr "Скуп података повезан са овим графиконом је можда обрисан."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "The datasource couldn't be loaded"
@@ -15824,11 +16302,14 @@ msgstr ""
 "Параметар metadata_params у пољу Extra није правилно конфигурисан. Кључ "
 "%(key)s је неважећи."
 
-#, python-brace-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
 msgstr ""
+"Параметар metadata_params у пољу Extra није правилно конфигурисан. Кључ "
+"%{key}s је неважећи."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -15998,22 +16479,36 @@ msgstr ""
 " и „Сертификат“ конфигурације базе података нису присутни у извозним "
 "фајловима и треба их додати ручно након увоза ако су потребни."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "The passwords for the databases below are needed in order to import them."
 " Please note that the \"Secure Extra\" and \"Certificate\" sections of "
 "the database configuration are not present in explore files and should be"
 " added manually after the import if they are needed."
 msgstr ""
+"Лозинке за базе података испод су потребне да би се оне увезле. Имајте на"
+" уму да одељци „Безбедносне додатне поставке“ и „Сертификат“ "
+"конфигурације базе података нису присутни у извезеним датотекама и треба "
+"их ручно додати након увоза ако су потребни."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "The pattern of timestamp format. For strings use "
-msgstr ""
+msgstr "Образац формата временске ознаке. За стрингове користите "
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "The periodicity over which to pivot time. Users can provide\n"
 "            \"Pandas\" offset alias.\n"
 "            Click on the info bubble for more details on accepted "
 "\"freq\" expressions."
 msgstr ""
+"Периодичност по којој се пивотира време. Корисници могу да наведу\n"
+"            \"Pandas\" алиас помака.\n"
+"            Кликните на инфо облачић за више детаља о прихваћеним "
+"\"freq\" изразима."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "The pixel radius"
@@ -16362,8 +16857,10 @@ msgstr "Горња граница опсега прага за Isoband"
 msgid "The user has been updated successfully."
 msgstr "Корисник је успешно ажуриран."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "The user seems to have been deleted"
-msgstr ""
+msgstr "Изгледа да је корисник обрисан"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "The user was updated successfully"
@@ -16606,12 +17103,15 @@ msgstr "Дошло је до проблема при брисању одабра
 msgid "There was an issue deleting the selected charts: %s"
 msgstr "Дошло је до проблема при брисању одабраних графикона: %s"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "There was an issue deleting the selected dashboards: "
-msgstr ""
+msgstr "Дошло је до проблема при брисању изабраних контролних табли: "
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "There was an issue deleting the selected datasets: %s"
-msgstr ""
+msgstr "Дошло је до проблема при брисању изабраних скупова података: %s"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -16633,15 +17133,20 @@ msgstr "Дошло је до проблема при брисању одабра
 msgid "There was an issue deleting: %s"
 msgstr "Дошло је до проблема при брисању: %s"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "There was an issue duplicating the dataset."
-msgstr ""
+msgstr "Дошло је до проблема при дуплирању скупа података."
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "There was an issue duplicating the selected datasets: %s"
-msgstr ""
+msgstr "Дошло је до проблема при дуплирању изабраних скупова података: %s"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "There was an issue exporting the database"
-msgstr ""
+msgstr "Дошло је до проблема при извозу базе података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "There was an issue exporting the selected charts"
@@ -16651,8 +17156,10 @@ msgstr "Дошло је до проблема при извозу одабран
 msgid "There was an issue exporting the selected dashboards"
 msgstr "Дошло је до проблема при извозу одабраних контролних табли"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "There was an issue exporting the selected datasets"
-msgstr ""
+msgstr "Дошло је до проблема при извозу изабраних скупова података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "There was an issue exporting the selected themes"
@@ -16783,10 +17290,14 @@ msgstr ""
 "Овај графикон можда није компатибилан са филтером (скупови података се не"
 " подударају)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "This chart type is not supported when using an unsaved query as a chart "
 "source. "
 msgstr ""
+"Овај тип графикона није подржан када се несачувани упит користи као извор"
+" графикона. "
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "This column might be incompatible with current dataset"
@@ -16835,11 +17346,14 @@ msgstr ""
 "                  приказа треба да буде пренесено графику који садржи "
 "податке напомена."
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid ""
 "This dashboard is currently auto refreshing; the next auto refresh will "
 "be in %s."
 msgstr ""
+"Ова контролна табла се тренутно аутоматски освежава; следеће аутоматско "
+"освежавање биће за %s."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "This dashboard is managed externally, and can't be edited in Superset"
@@ -16950,21 +17464,31 @@ msgstr ""
 msgid "This filter already exist on the report"
 msgstr "Овај филтер већ постоји на извештају"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "This filter might be incompatible with current dataset"
-msgstr ""
+msgstr "Овај филтер можда није компатибилан са тренутним скупом података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "This folder is currently empty"
 msgstr "Ова фасцикла је тренутно празна"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "This folder only accepts columns"
-msgstr ""
+msgstr "Ова фасцикла прихвата само колоне"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "This folder only accepts metrics"
-msgstr ""
+msgstr "Ова фасцикла прихвата само метрике"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "This functionality is disabled in your environment for security reasons."
 msgstr ""
+"Ова функционалност је онемогућена у вашем окружењу из безбедносних "
+"разлога."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -17046,8 +17570,10 @@ msgstr ""
 msgid "This may be triggered by:"
 msgstr "Ово може бити изазвано следећим:"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "This metric might be incompatible with current dataset"
-msgstr ""
+msgstr "Ова метрика можда није компатибилна са тренутним скупом података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "This name is already taken. Please choose another one."
@@ -17208,8 +17734,10 @@ msgstr "Формат времена"
 msgid "Time Grain"
 msgstr "Временска грануларност"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Time Grain must be specified when using Time Shift."
-msgstr ""
+msgstr "Временска грануларност мора бити наведена када се користи временски помак."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Time Granularity"
@@ -17231,20 +17759,30 @@ msgstr "Временски однос"
 msgid "Time Series"
 msgstr "Временска серија"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Time Series - Line Chart"
-msgstr ""
+msgstr "Временска серија - линијски графикон"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Time Series - Nightingale Rose Chart"
-msgstr ""
+msgstr "Временска серија - Nightingale Rose графикон"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Time Series - Paired t-test"
-msgstr ""
+msgstr "Временска серија - упарени т-тест"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Time Series - Percent Change"
-msgstr ""
+msgstr "Временска серија - процентуална промена"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Time Series - Period Pivot"
-msgstr ""
+msgstr "Временска серија - пивот периода"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Time Series Options"
@@ -17254,8 +17792,10 @@ msgstr "Опције временске серије"
 msgid "Time Shift"
 msgstr "Временски помак"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Time Table View"
-msgstr ""
+msgstr "Приказ временске табеле"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Time column"
@@ -17372,8 +17912,10 @@ msgstr ""
 "Временски низ је нејасан. Наведите [пре %(human_readable)s] или "
 "[%(human_readable)s касније]."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Time-series Percent Change"
-msgstr ""
+msgstr "Процентуална промена временске серије"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Time-series Period Pivot"
@@ -17444,8 +17986,10 @@ msgstr ""
 "Да бисте омогућили сортирање по више колона, држите тастер ⇧ Shift док "
 "кликћете на заглавље колоне."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "To entire row"
-msgstr ""
+msgstr "На цео ред"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "To filter on a metric, use Custom SQL tab."
@@ -17455,8 +17999,10 @@ msgstr "За филтрирање по мери, користите картиц
 msgid "To get a readable URL for your dashboard"
 msgstr "Да бисте добили читљив URL за своју контролну таблу"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "To text color"
-msgstr ""
+msgstr "На боју текста"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Token Request URI"
@@ -17523,9 +18069,10 @@ msgstr "Укупно"
 msgid "Total (%(aggfunc)s)"
 msgstr "Укупно (%(aggfunc)s)"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "Total (%(aggregatorName)s)"
-msgstr ""
+msgstr "Укупно (%(aggregatorName)s)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Total color"
@@ -17766,10 +18313,12 @@ msgstr ""
 "опсега. Молимо проверите да ли ваш скуп података има правилно подешену "
 "временску колону."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Unable to load columns for the selected table. Please select a different "
 "table."
-msgstr ""
+msgstr "Није могуће учитати колоне за изабрану табелу. Изаберите другу табелу."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Unable to load dashboard"
@@ -18076,8 +18625,10 @@ msgstr ""
 msgid "Use a log scale"
 msgstr "Користи логаритамску скалу"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Use a log scale for the X-axis"
-msgstr ""
+msgstr "Користи логаритамску скалу за X осу"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Use a log scale for the Y-axis"
@@ -18375,8 +18926,10 @@ msgstr "Вертикално"
 msgid "Vertical (Left)"
 msgstr "Усправно (лево)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Vertical layout (rows)"
-msgstr ""
+msgstr "Вертикални распоред (редови)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "View"
@@ -18402,9 +18955,10 @@ msgstr "Прикажи као табелу"
 msgid "View in SQL Lab"
 msgstr "Прикажи у SQL Lab-у"
 
-#, python-format
+# Machine-translated (Claude), needs native review
+#, fuzzy, python-format
 msgid "View keys & indexes (%s)"
-msgstr ""
+msgstr "Прикажи кључеве и индексе (%s)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "View query"
@@ -18549,11 +19103,16 @@ msgstr ""
 "сваке јединице се истиче када пређете мишем преко одговарајуће географске"
 " границе."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "Visualizes many different time-series objects in a single chart. This "
 "chart is being deprecated and we recommend using the Time-series Chart "
 "instead."
 msgstr ""
+"Визуализује много различитих временских серија на једном графикону. Овај "
+"графикон је застарео и препоручујемо да уместо њега користите графикон "
+"временске серије."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -18563,8 +19122,10 @@ msgstr ""
 "Визуализује речи у колони које се најчешће појављују. Већи фонт одговара "
 "већој фреквенцији."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Viz is missing a datasource"
-msgstr ""
+msgstr "Визуализацији недостаје извор података"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Viz type"
@@ -18800,11 +19361,15 @@ msgstr ""
 "Када је омогућено, оса ће приказати ознаке за минималну и максималну "
 "вредност ваших података"
 
-# Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
+# Machine-translated (Claude), needs native review
+# Changed from the upstream-reviewed text to keep the do-not-translate term
+# 'SQL Lab'; was: 'Kada je omogućeno, korisnici mogu da vizualizuju rezultate
+# SQL laboratorije u Istraživanju.'
+#, fuzzy
 msgid "When enabled, users are able to visualize SQL Lab results in Explore."
 msgstr ""
-"Када је омогућено, корисници могу да визуализују резултате SQL "
-"лабораторије у Истраживању."
+"Када је омогућено, корисници могу да визуализују резултате SQL Lab-а у "
+"Истраживању."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "When only a primary metric is provided, a categorical color scale is used."
@@ -18862,10 +19427,15 @@ msgstr "Када користите 'Групиши по', ограничени 
 msgid "When using other than adaptive formatting, labels may overlap"
 msgstr "Када се користи формат различит од адаптивног, ознаке се могу преклапати"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "When using this option, default value can’t be set. Using this option may"
 " impact the load times for your dashboard."
 msgstr ""
+"Када се користи ова опција, подразумевана вредност не може бити подешена."
+" Коришћење ове опције може утицати на време учитавања ваше контролне "
+"табле."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Whether the progress bar overlaps when there are multiple groups of data"
@@ -18959,11 +19529,15 @@ msgstr "Да ли приказати назив метрике"
 msgid "Whether to display the metric name as a title"
 msgstr "Да ли приказати назив метрике као наслов"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Whether to display the min and max values of the X-axis"
-msgstr ""
+msgstr "Да ли приказати минималну и максималну вредност X осе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Whether to display the min and max values of the Y-axis"
-msgstr ""
+msgstr "Да ли приказати минималну и максималну вредност Y осе"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Whether to display the numerical values within the cells"
@@ -18977,8 +19551,10 @@ msgstr "Да ли приказати процентуалну вредност �
 msgid "Whether to display the stroke"
 msgstr "Да ли приказати контуру"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Whether to display the time range interactive selector"
-msgstr ""
+msgstr "Да ли приказати интерактивни бирач временског опсега"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Whether to display the timestamp"
@@ -19078,8 +19654,10 @@ msgstr "Да ли сортирати силазно или узлазно"
 msgid "Whether to sort results by the selected metric in descending order."
 msgstr "Да ли сортирати резултате по одабраној метрици у силазном редоследу."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Whether to sort tooltip by the selected metric in descending order."
-msgstr ""
+msgstr "Да ли сортирати облачић по изабраној метрици опадајућим редоследом."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Whether to truncate metrics"
@@ -19181,8 +19759,10 @@ msgstr "Наслов X осе"
 msgid "X Axis Title Margin"
 msgstr "Маргина наслова X осе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "X Log Scale"
-msgstr ""
+msgstr "X логаритамска скала"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "X Tick Layout"
@@ -19192,8 +19772,10 @@ msgstr "Распоред ознака X осе"
 msgid "X axis title margin"
 msgstr "Маргина наслова X осе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "X bounds"
-msgstr ""
+msgstr "Границе X осе"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "X-Axis Sort Ascending"
@@ -19215,15 +19797,19 @@ msgstr "Интервал скале X"
 msgid "XYZ"
 msgstr "XYZ"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Y 2 bounds"
-msgstr ""
+msgstr "Границе Y осе 2"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Y Axis"
 msgstr "Y оса"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Y Axis 2 Bounds"
-msgstr ""
+msgstr "Границе Y осе 2"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Y Axis Bounds"
@@ -19257,8 +19843,10 @@ msgstr "Y логаритамска скала"
 msgid "Y axis title margin"
 msgstr "Маргина наслова Y осе"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Y bounds"
-msgstr ""
+msgstr "Границе Y осе"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Y-Axis"
@@ -19457,8 +20045,12 @@ msgstr ""
 "Не можете обрисати последњи временски филтер јер се користи за филтере "
 "временског опсега у контролним таблама."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "You cannot use 45° tick layout along with the time range filter"
 msgstr ""
+"Распоред подеока под углом од 45° не може се користити заједно са "
+"филтером временског опсега"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 #, python-format
@@ -19530,8 +20122,10 @@ msgstr "Немате права да креирате графикон"
 msgid "You don't have the rights to create a dashboard"
 msgstr "Немате права да креирате контролну таблу"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "You don't have the rights to download as csv"
-msgstr ""
+msgstr "Немате права да преузмете као CSV"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "You have removed this filter."
@@ -19556,10 +20150,15 @@ msgstr ""
 "потпуности опозвати наредне радње. Можете сачувати своје тренутно стање "
 "да бисте ресетовали историју."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid ""
 "You must be a dataset owner in order to edit. Please reach out to a "
 "dataset owner to request modifications or edit access."
 msgstr ""
+"Морате бити власник скупа података да бисте га уређивали. Обратите се "
+"власнику скупа података да бисте затражили измене или приступ за "
+"уређивање."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "You must pick a name for the new dashboard"
@@ -19569,8 +20168,10 @@ msgstr "Морате изабрати назив за нову контролн�
 msgid "You must run the query successfully first"
 msgstr "Морате прво успешно извршити упит"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "You need to configure HTML sanitization to use CSS"
-msgstr ""
+msgstr "Морате да конфигуришете HTML санитизацију да бисте користили CSS"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid ""
@@ -19609,8 +20210,10 @@ msgstr "Ваш графикон је спреман!"
 msgid "Your dashboard is near the size limit."
 msgstr "Ваша контролна табла се приближава ограничењу величине."
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "Your dashboard is too large. Please reduce its size before saving it."
-msgstr ""
+msgstr "Ваша контролна табла је превелика. Смањите њену величину пре чувања."
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "Your query could not be saved"
@@ -19676,11 +20279,17 @@ msgstr "Ниво зума мапе"
 msgid "[ untitled dashboard ]"
 msgstr "[ неименована контролна табла ]"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "[Longitude] and [Latitude] columns must be present in [Group By]"
 msgstr ""
+"Колоне [Географска дужина] и [Географска ширина] морају бити присутне у "
+"[Групиши по]"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "[Longitude] and [Latitude] must be set"
-msgstr ""
+msgstr "[Географска дужина] и [Географска ширина] морају бити подешене"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "[Missing Dataset]"
@@ -19771,8 +20380,10 @@ msgstr "`width` мора бити већи или једнак 0"
 msgid "aggregate"
 msgstr "агрегат"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "alert"
-msgstr ""
+msgstr "упозорење"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "alert condition"
@@ -19818,8 +20429,10 @@ msgstr "аутоматски"
 msgid "background"
 msgstr "позадина"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "basis"
-msgstr ""
+msgstr "basis"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "begins with"
@@ -19842,8 +20455,10 @@ msgstr "између {down} и {up} {name}"
 msgid "bfill"
 msgstr "bfill"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "bolt"
-msgstr ""
+msgstr "bolt"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "boolean type icon"
@@ -19865,8 +20480,10 @@ msgstr "користећи"
 msgid "cannot be empty"
 msgstr "не може бити празно"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "cardinal"
-msgstr ""
+msgstr "cardinal"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "change"
@@ -20141,14 +20758,20 @@ msgstr "завршава се са"
 msgid "entries"
 msgstr "уноси"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "entries per page"
-msgstr ""
+msgstr "ставки по страници"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "error"
-msgstr ""
+msgstr "грешка"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "error_message"
-msgstr ""
+msgstr "error_message"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "every"
@@ -20206,9 +20829,12 @@ msgstr "форматирано"
 msgid "function type icon"
 msgstr "икона типа функције"
 
-# Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
+# Machine-translated (Claude), needs native review
+# Changed from the upstream-reviewed text to keep the do-not-translate term
+# 'geohash'; was: 'geoheš (kvadrat)'
+#, fuzzy
 msgid "geohash (square)"
-msgstr "геохеш (квадрат)"
+msgstr "geohash (квадрат)"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "heatmap"
@@ -20226,8 +20852,10 @@ msgstr "овде"
 msgid "hour"
 msgstr "сат"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "https://"
-msgstr ""
+msgstr "https://"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "in"
@@ -20324,8 +20952,10 @@ msgstr "лево"
 msgid "less than {min} {name}"
 msgstr "мање од {min} {name}"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "linear"
-msgstr ""
+msgstr "линеарно"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "log"
@@ -20375,8 +21005,10 @@ msgstr "минут"
 msgid "minute(s)"
 msgstr "минут(а)"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "monotone"
-msgstr ""
+msgstr "monotone"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "month"
@@ -20412,8 +21044,10 @@ msgstr "не садржи"
 msgid "numeric type icon"
 msgstr "икона нумеричког типа"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "nvd3"
-msgstr ""
+msgstr "nvd3"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "of"
@@ -20447,8 +21081,10 @@ msgstr "оригинал"
 msgid "overall"
 msgstr "укупно"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "owners"
-msgstr ""
+msgstr "власници"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "p-value precision"
@@ -20604,11 +21240,15 @@ msgstr "наизменично"
 msgid "std"
 msgstr "std"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "step-after"
-msgstr ""
+msgstr "step-after"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "step-before"
-msgstr ""
+msgstr "step-before"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "stopped"
@@ -20642,8 +21282,10 @@ msgstr "синтакса."
 msgid "tag"
 msgstr "ознака"
 
+# Machine-translated (Claude), needs native review
+#, fuzzy
 msgid "tags"
-msgstr ""
+msgstr "ознаке"
 
 # Seeded from apache/superset@ad1abef52ee4 (reviewed upstream)
 msgid "temporal type icon"
