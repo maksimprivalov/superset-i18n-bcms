@@ -1,0 +1,26 @@
+# Upstream apache/superset checkout (tooling and template reference only)
+.upstream/
+
+# Build artifacts: CI builds these and attaches them to GitHub Releases
+*.mo
+messages.json
+translation_index.json
+dist/
+build/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

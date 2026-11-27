@@ -1,0 +1,19 @@
+superset-i18n-bcms
+Unofficial Serbian, Croatian and Bosnian UI translations for Apache Superset.
+
+This project is not part of, endorsed by, or affiliated with the Apache
+Software Foundation or the Apache Superset project. "Apache", "Apache
+Superset" and "Superset" are trademarks of the Apache Software Foundation.
+
+The translation catalogs (.po files) in this repository are derived from the
+message template (messages.pot) and translation catalogs of Apache Superset,
+which carries the following notice:
+
+  Apache Superset
+  Copyright 2016-2024 The Apache Software Foundation
+
+  This product includes software developed at The Apache Software
+  Foundation (http://www.apache.org/).
+
+Apache Superset is licensed under the Apache License, Version 2.0.
+This project is distributed under the same license; see LICENSE.
